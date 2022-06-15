@@ -1,0 +1,6 @@
+framework module Pods_NewFannerCamTests {
+  umbrella header "Pods-NewFannerCamTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

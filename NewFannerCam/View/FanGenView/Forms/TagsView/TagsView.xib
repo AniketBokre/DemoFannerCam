@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TagsView" customModule="NewFannerCam" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="702" height="433"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="El7-jM-82L" userLabel="bg">
+                    <rect key="frame" x="0.0" y="0.0" width="702" height="433"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Individual Tag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHi-Y5-p4P">
+                    <rect key="frame" x="298.5" y="40" width="105" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IxW-KP-Sdw">
+                    <rect key="frame" x="175.5" y="73" width="351" height="348"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yaw-kt-eR6" userLabel="middle view">
+                    <rect key="frame" x="0.0" y="73" width="702" height="360"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="IxW-KP-Sdw" secondAttribute="bottom" constant="12" id="43a-1d-v8e"/>
+                <constraint firstItem="yaw-kt-eR6" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Bs2-dR-Fkg"/>
+                <constraint firstItem="yaw-kt-eR6" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="DEf-SF-NWA"/>
+                <constraint firstItem="IxW-KP-Sdw" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="MRN-eE-pvu"/>
+                <constraint firstItem="IxW-KP-Sdw" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.5" id="aK2-C0-osI"/>
+                <constraint firstItem="El7-jM-82L" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="cfs-TY-KhJ"/>
+                <constraint firstItem="KHi-Y5-p4P" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="doo-bd-ZZi"/>
+                <constraint firstItem="El7-jM-82L" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="eYQ-dz-SeU"/>
+                <constraint firstItem="yaw-kt-eR6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="fZ0-2F-l8V"/>
+                <constraint firstItem="El7-jM-82L" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="h0g-PK-McF"/>
+                <constraint firstItem="El7-jM-82L" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="j7Z-RD-rFu"/>
+                <constraint firstItem="KHi-Y5-p4P" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="40" id="m9G-5q-ARZ"/>
+                <constraint firstItem="yaw-kt-eR6" firstAttribute="top" secondItem="KHi-Y5-p4P" secondAttribute="bottom" constant="12" id="pJs-Ta-JyF"/>
+                <constraint firstItem="IxW-KP-Sdw" firstAttribute="top" secondItem="KHi-Y5-p4P" secondAttribute="bottom" constant="12" id="u37-OJ-sYj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="middleView" destination="yaw-kt-eR6" id="X8N-jE-2Co"/>
+                <outlet property="tableBottomConstraint" destination="43a-1d-v8e" id="kJq-Ja-Xio"/>
+                <outlet property="tableTopConstraint" destination="u37-OJ-sYj" id="MMb-WS-kB8"/>
+                <outlet property="tableWidthConstraint" destination="aK2-C0-osI" id="ebZ-yy-uNa"/>
+                <outlet property="tagLbl" destination="KHi-Y5-p4P" id="RFm-Wl-7Ja"/>
+                <outlet property="tagList" destination="IxW-KP-Sdw" id="nws-6X-Oi4"/>
+                <outlet property="titleTopConstraint" destination="m9G-5q-ARZ" id="avT-Xu-NiH"/>
+            </connections>
+            <point key="canvasLocation" x="-43.200000000000003" y="186.65667166416793"/>
+        </view>
+    </objects>
+</document>

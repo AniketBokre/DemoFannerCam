@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MarkersView" customModule="NewFannerCam" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="891" height="379"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mMR-4C-2VN" userLabel="f_individual">
+                    <rect key="frame" x="12" y="33" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="48" id="IFM-6N-1oR"/>
+                        <constraint firstAttribute="width" secondItem="mMR-4C-2VN" secondAttribute="height" multiplier="1:1" id="NUD-Fd-68q"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <state key="normal" backgroundImage="ic_individual_red"/>
+                    <connections>
+                        <action selector="onTouchDown:" destination="iN0-l3-epB" eventType="touchDown" id="Ury-UZ-nnv"/>
+                        <action selector="onTouchDragExit:" destination="iN0-l3-epB" eventType="touchDragExit" id="xEr-33-eDC"/>
+                        <action selector="onTouchUp:" destination="iN0-l3-epB" eventType="touchUpInside" id="xL7-Ho-BbF"/>
+                    </connections>
+                </button>
+                <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIg-Qt-nNR" userLabel="f_generic">
+                    <rect key="frame" x="12" y="165.5" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="kIg-Qt-nNR" secondAttribute="height" multiplier="1:1" id="ROg-ni-2ok"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <state key="normal" backgroundImage="ic_generic_red"/>
+                    <connections>
+                        <action selector="onTouchDown:" destination="iN0-l3-epB" eventType="touchDown" id="UXV-Dh-K9w"/>
+                        <action selector="onTouchDragExit:" destination="iN0-l3-epB" eventType="touchDragExit" id="jam-iu-kN4"/>
+                        <action selector="onTouchUp:" destination="iN0-l3-epB" eventType="touchUpInside" id="O5c-Hd-93R"/>
+                    </connections>
+                </button>
+                <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdA-W3-CLa" userLabel="f_collective">
+                    <rect key="frame" x="12" y="298" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="hdA-W3-CLa" secondAttribute="height" multiplier="1:1" id="ngL-6u-Gcu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <state key="normal" backgroundImage="ic_collective_red"/>
+                    <connections>
+                        <action selector="onTouchDown:" destination="iN0-l3-epB" eventType="touchDown" id="ukf-oT-Kmu"/>
+                        <action selector="onTouchDragExit:" destination="iN0-l3-epB" eventType="touchDragExit" id="vQS-9S-caz"/>
+                        <action selector="onTouchUp:" destination="iN0-l3-epB" eventType="touchUpInside" id="ljK-Zf-Tl3"/>
+                    </connections>
+                </button>
+                <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H13-Hw-59p" userLabel="s_individual">
+                    <rect key="frame" x="831" y="33" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="H13-Hw-59p" secondAttribute="height" multiplier="1:1" id="Y96-Gy-iKQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <state key="normal" backgroundImage="ic_individual_red"/>
+                    <connections>
+                        <action selector="onTouchDown:" destination="iN0-l3-epB" eventType="touchDown" id="gcq-1J-bgJ"/>
+                        <action selector="onTouchDragExit:" destination="iN0-l3-epB" eventType="touchDragExit" id="IOJ-2I-3BR"/>
+                        <action selector="onTouchUp:" destination="iN0-l3-epB" eventType="touchUpInside" id="uXt-hh-FYz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSL-Ut-svG" userLabel="s_generic">
+                    <rect key="frame" x="831" y="165.5" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="MSL-Ut-svG" secondAttribute="height" multiplier="1:1" id="Ecc-tE-QjL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <state key="normal" backgroundImage="ic_generic_red"/>
+                    <connections>
+                        <action selector="onTouchDown:" destination="iN0-l3-epB" eventType="touchDown" id="g02-Z5-nTd"/>
+                        <action selector="onTouchDragExit:" destination="iN0-l3-epB" eventType="touchDragExit" id="p0I-XW-AvZ"/>
+                        <action selector="onTouchUp:" destination="iN0-l3-epB" eventType="touchUpInside" id="W4Z-cg-z88"/>
+                    </connections>
+                </button>
+                <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dn6-vA-pog" userLabel="s_collective">
+                    <rect key="frame" x="831" y="298" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Dn6-vA-pog" secondAttribute="height" multiplier="1:1" id="s1T-yp-ejl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <state key="normal" backgroundImage="ic_collective_red"/>
+                    <connections>
+                        <action selector="onTouchDown:" destination="iN0-l3-epB" eventType="touchDown" id="RXL-1G-gEn"/>
+                        <action selector="onTouchDragExit:" destination="iN0-l3-epB" eventType="touchDragExit" id="O68-MS-qHG"/>
+                        <action selector="onTouchUp:" destination="iN0-l3-epB" eventType="touchUpInside" id="7pu-o7-VkQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="hdA-W3-CLa" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="1lc-k2-whO"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="H13-Hw-59p" secondAttribute="trailing" constant="12" id="39U-3N-6NG"/>
+                <constraint firstItem="H13-Hw-59p" firstAttribute="width" secondItem="mMR-4C-2VN" secondAttribute="width" id="7LD-nt-5o2"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="MSL-Ut-svG" secondAttribute="trailing" constant="12" id="AEU-YR-20q"/>
+                <constraint firstItem="kIg-Qt-nNR" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="IX5-5U-jnb"/>
+                <constraint firstItem="Dn6-vA-pog" firstAttribute="centerY" secondItem="hdA-W3-CLa" secondAttribute="centerY" id="RRy-Kd-MCb"/>
+                <constraint firstItem="Dn6-vA-pog" firstAttribute="width" secondItem="hdA-W3-CLa" secondAttribute="width" id="bFG-10-Ndw"/>
+                <constraint firstItem="MSL-Ut-svG" firstAttribute="centerY" secondItem="kIg-Qt-nNR" secondAttribute="centerY" id="daG-5J-12K"/>
+                <constraint firstItem="H13-Hw-59p" firstAttribute="centerY" secondItem="mMR-4C-2VN" secondAttribute="centerY" id="doY-cI-1LZ"/>
+                <constraint firstItem="kIg-Qt-nNR" firstAttribute="width" secondItem="mMR-4C-2VN" secondAttribute="width" id="h5w-Xr-bb9"/>
+                <constraint firstItem="MSL-Ut-svG" firstAttribute="width" secondItem="kIg-Qt-nNR" secondAttribute="width" id="hA0-2t-DIx"/>
+                <constraint firstItem="hdA-W3-CLa" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="1.7" id="hmd-Ik-3EQ"/>
+                <constraint firstItem="mMR-4C-2VN" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="0.3" id="j6M-dL-9mG"/>
+                <constraint firstItem="hdA-W3-CLa" firstAttribute="width" secondItem="mMR-4C-2VN" secondAttribute="width" id="rc7-oB-Dc8"/>
+                <constraint firstItem="kIg-Qt-nNR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="vBJ-pg-vXn"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Dn6-vA-pog" secondAttribute="trailing" constant="12" id="xmQ-xb-llf"/>
+                <constraint firstItem="mMR-4C-2VN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="zZ6-5m-Miq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="f_colLeadingCons" destination="1lc-k2-whO" id="ArM-bY-aea"/>
+                <outlet property="f_colVerticalCons" destination="hmd-Ik-3EQ" id="9hS-17-9L5"/>
+                <outlet property="f_collectiveBtn" destination="hdA-W3-CLa" id="asO-am-WRU"/>
+                <outlet property="f_genLeadingCons" destination="vBJ-pg-vXn" id="6lk-f2-CNW"/>
+                <outlet property="f_genVerticalCons" destination="IX5-5U-jnb" id="sUV-d8-r9A"/>
+                <outlet property="f_genericBtn" destination="kIg-Qt-nNR" id="xSR-07-4Ly"/>
+                <outlet property="f_indiLeadingCons" destination="zZ6-5m-Miq" id="N3a-2A-oKk"/>
+                <outlet property="f_indiVerticalCons" destination="j6M-dL-9mG" id="dVx-Si-m2Y"/>
+                <outlet property="f_indiWidthCons" destination="IFM-6N-1oR" id="BNG-8h-y5J"/>
+                <outlet property="f_individualBtn" destination="mMR-4C-2VN" id="Nht-Cq-hxr"/>
+                <outlet property="s_colTrailingCons" destination="xmQ-xb-llf" id="qzl-yS-hZa"/>
+                <outlet property="s_collectiveBtn" destination="Dn6-vA-pog" id="2nA-mI-ZBG"/>
+                <outlet property="s_genTrailingCons" destination="AEU-YR-20q" id="XYP-uD-9cX"/>
+                <outlet property="s_genericBtn" destination="MSL-Ut-svG" id="wZC-ik-AA5"/>
+                <outlet property="s_indiTrailingCons" destination="39U-3N-6NG" id="Jhf-pl-Jmz"/>
+                <outlet property="s_individualBtn" destination="H13-Hw-59p" id="qly-5V-Ntf"/>
+            </connections>
+            <point key="canvasLocation" x="104.8" y="131.78410794602701"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_collective_red" width="24" height="24"/>
+        <image name="ic_generic_red" width="24" height="24"/>
+        <image name="ic_individual_red" width="24" height="24"/>
+    </resources>
+</document>

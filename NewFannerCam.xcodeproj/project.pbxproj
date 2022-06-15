@@ -1,0 +1,1825 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D274B382524B28E00F9A0D6 /* RecapListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D274B372524B28E00F9A0D6 /* RecapListCell.swift */; };
+		2DC5E20025401F8700E8ADF4 /* Recap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC5E1FF25401F8700E8ADF4 /* Recap.swift */; };
+		39A0609C2354B9E900D48F25 /* Marker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A0609B2354B9E900D48F25 /* Marker.swift */; };
+		3D28C735BB82EBAE7A3B59D7 /* Pods_NewFannerCamUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0DCC1FCC7994F70F2B2C77 /* Pods_NewFannerCamUITests.framework */; };
+		4A0019692218ADD5001CDEAD /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0019682218ADD5001CDEAD /* Downloader.swift */; };
+		4A09E73921D183970066BC24 /* MatchesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A09E73821D183970066BC24 /* MatchesVC.swift */; };
+		4A0E53BA222C3CC900E8E2E5 /* AORangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0E53B9222C3CC900E8E2E5 /* AORangeSlider.swift */; };
+		4A11FE9A2223A73F00B0D0D7 /* PhotoGalleryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A11FE992223A73F00B0D0D7 /* PhotoGalleryService.swift */; };
+		4A1772FD21DDFC4500045BBC /* MatchesDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1772FC21DDFC4500045BBC /* MatchesDetailVC.swift */; };
+		4A1772FF21DE08E900045BBC /* MatchesDetailHighlightsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1772FE21DE08E900045BBC /* MatchesDetailHighlightsVC.swift */; };
+		4A17730121DE091300045BBC /* MatchesDetailMainVideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A17730021DE091300045BBC /* MatchesDetailMainVideoVC.swift */; };
+		4A1C6F30223AE7E200C6EE7E /* banner_replay.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A1C6F2F223AE7E200C6EE7E /* banner_replay.png */; };
+		4A1E0C052200424500C047FC /* VideoProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1E0C042200424500C047FC /* VideoProcess.swift */; };
+		4A1E0C07220046AB00C047FC /* MatchMainVideosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1E0C06220046AB00C047FC /* MatchMainVideosCell.swift */; };
+		4A2499E721E2B53B007D8FE9 /* MatchesMainVideoPlayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2499E621E2B53B007D8FE9 /* MatchesMainVideoPlayVC.swift */; };
+		4A2A800B221B597E008F6FDC /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2A800A221B597E008F6FDC /* ResponseModel.swift */; };
+		4A2AE70321D6DEAB00FB5DC6 /* SettingsMarkersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2AE70221D6DEAB00FB5DC6 /* SettingsMarkersVC.swift */; };
+		4A2E9559223A372500617B36 /* ScoreboardSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2E9558223A372400617B36 /* ScoreboardSetting.swift */; };
+		4A3CE94121FF570D00E83967 /* ImageProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3CE94021FF570D00E83967 /* ImageProcess.swift */; };
+		4A443F1D221873B1001AA6AF /* SettingMarkerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A443F1C221873B1001AA6AF /* SettingMarkerCell.swift */; };
+		4A44E0DC222463D100179BC6 /* IAPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A44E0DB222463D100179BC6 /* IAPService.swift */; };
+		4A44E0DF2224737E00179BC6 /* FannerCamProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A44E0DE2224737E00179BC6 /* FannerCamProducts.swift */; };
+		4A44E0E1222498F500179BC6 /* MatchesReportClipCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A44E0E0222498F500179BC6 /* MatchesReportClipCell.swift */; };
+		4A4B48EF21D18D6E001432BA /* Matches.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A4B48EE21D18D6E001432BA /* Matches.storyboard */; };
+		4A4B48F121D18DDF001432BA /* Videos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A4B48F021D18DDF001432BA /* Videos.storyboard */; };
+		4A4B48F321D18DED001432BA /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A4B48F221D18DED001432BA /* Settings.storyboard */; };
+		4A58456221E9218800C94150 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A58456121E9218800C94150 /* UIView+Layout.swift */; };
+		4A5B45AA22173C2E009DB6BB /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5B45A922173C2E009DB6BB /* VideoCell.swift */; };
+		4A61A95821F3EAD000C5018F /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A61A95721F3EAD000C5018F /* UIViewControllerExtension.swift */; };
+		4A65F52D2209C24B00DE18B4 /* FanGenerationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A65F52C2209C24B00DE18B4 /* FanGenerationService.swift */; };
+		4A65F52F2209D74900DE18B4 /* MatchClipCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A65F52E2209D74900DE18B4 /* MatchClipCell.swift */; };
+		4A6C7937221A828600C80842 /* SettingImgActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C7936221A828600C80842 /* SettingImgActionCell.swift */; };
+		4A6D98EA21EC93A100FBB1D7 /* StopFrameEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6D98E921EC93A100FBB1D7 /* StopFrameEditVC.swift */; };
+		4A6DFBCB21DFDED1002E648A /* MatchesOverlayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6DFBCA21DFDED1002E648A /* MatchesOverlayVC.swift */; };
+		4A750F2421EE1B260017B425 /* Clip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A750F2321EE1B260017B425 /* Clip.swift */; };
+		4A750F2821EE1C6C0017B425 /* StopFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A750F2721EE1C6C0017B425 /* StopFrame.swift */; };
+		4A750F2A21EE1C800017B425 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A750F2921EE1C800017B425 /* Match.swift */; };
+		4A750F2C21EE2C790017B425 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A750F2B21EE2C790017B425 /* Video.swift */; };
+		4A750F2E21EE38A60017B425 /* DirectoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A750F2D21EE38A60017B425 /* DirectoryManager.swift */; };
+		4A7CB595221E9015001B2335 /* SettingImgCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7CB594221E9015001B2335 /* SettingImgCell.swift */; };
+		4A7CB597221EA87E001B2335 /* ImgArchive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7CB596221EA87E001B2335 /* ImgArchive.swift */; };
+		4A7D248421F0ED0D00F5743E /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7D248321F0ED0D00F5743E /* DateExtension.swift */; };
+		4A7F94D9233E55C800435409 /* TermPrivacyWebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7F94D8233E55C800435409 /* TermPrivacyWebVC.swift */; };
+		4A7F94DB233E57E400435409 /* SettingMatchSusbscriptionInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7F94DA233E57E400435409 /* SettingMatchSusbscriptionInfoCell.swift */; };
+		4A7F94DD233E5C7800435409 /* StorePurchaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7F94DC233E5C7800435409 /* StorePurchaseVC.swift */; };
+		4A8324E421FA44540061AA5D /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8324E321FA44540061AA5D /* CameraService.swift */; };
+		4A84DEB1221170C6004DB1B3 /* AVPlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A84DEB0221170C6004DB1B3 /* AVPlayerService.swift */; };
+		4A86ED25222EAE36008A6EAB /* StopFrameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A86ED24222EAE36008A6EAB /* StopFrameButton.swift */; };
+		4A872D7B221C4CEC00A763D4 /* VideoProcessingModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A872D7A221C4CEC00A763D4 /* VideoProcessingModels.swift */; };
+		4A872D7E221C5C0000A763D4 /* default_team_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A872D7D221C5BFF00A763D4 /* default_team_logo.png */; };
+		4A8A1AE921EC768300F014C8 /* StopFramePopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8A1AE821EC768300F014C8 /* StopFramePopupVC.swift */; };
+		4A8AB1F82235B17900559294 /* TableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8AB1F72235B17900559294 /* TableViewExtension.swift */; };
+		4A8AB1FA2235CFF400559294 /* ImageClip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8AB1F92235CFF400559294 /* ImageClip.swift */; };
+		4A8C17F021DE935300550A57 /* MatchesDetailHighlightDropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8C17EE21DE935300550A57 /* MatchesDetailHighlightDropDownCell.swift */; };
+		4A8C17F121DE935300550A57 /* MatchesDetailHighlightDropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A8C17EF21DE935300550A57 /* MatchesDetailHighlightDropDownCell.xib */; };
+		4A8C17F321DEB95000550A57 /* MatchesClipInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8C17F221DEB95000550A57 /* MatchesClipInfoVC.swift */; };
+		4A8F146C21F5238000F73583 /* MainVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8F146B21F5237F00F73583 /* MainVideo.swift */; };
+		4A911CCC21EF93DE000C5086 /* UserStandardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A911CCB21EF93DE000C5086 /* UserStandardManager.swift */; };
+		4A911CCE21EFAD64000C5086 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A911CCD21EFAD64000C5086 /* DataManager.swift */; };
+		4A92E22C21E93C330094BF25 /* MessageBarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A92E22B21E93C330094BF25 /* MessageBarService.swift */; };
+		4A92EF0C222064F800C90818 /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A92EF0B222064F800C90818 /* Template.swift */; };
+		4A92EF0E22209BF300C90818 /* TemplateMediaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A92EF0D22209BF300C90818 /* TemplateMediaCell.swift */; };
+		4A97093921F2119800E87DEC /* ValidationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A97093821F2119800E87DEC /* ValidationService.swift */; };
+		4A97093B21F2159100E87DEC /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A97093A21F2159100E87DEC /* StringExtension.swift */; };
+		4AA3810F21F60187003E6CA3 /* Utiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA3810E21F60187003E6CA3 /* Utiles.swift */; };
+		4AB3CA4021E3E56500E37EA7 /* MatchesMainVideoRecordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB3CA3F21E3E56500E37EA7 /* MatchesMainVideoRecordVC.swift */; };
+		4AC2C2902238B40200A9F01E /* ClipPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC2C28F2238B40200A9F01E /* ClipPreview.swift */; };
+		4ACB9C3321D156E300616C96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACB9C3221D156E300616C96 /* AppDelegate.swift */; };
+		4ACB9C3A21D156E300616C96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ACB9C3821D156E300616C96 /* Main.storyboard */; };
+		4ACB9C3F21D156E900616C96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ACB9C3D21D156E900616C96 /* LaunchScreen.storyboard */; };
+		4ACB9C4A21D156E900616C96 /* NewFannerCamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACB9C4921D156E900616C96 /* NewFannerCamTests.swift */; };
+		4ACB9C5521D156EA00616C96 /* NewFannerCamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACB9C5421D156EA00616C96 /* NewFannerCamUITests.swift */; };
+		4ACDB1AA2239777B00851A5E /* MatchRecoveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACDB1A92239777B00851A5E /* MatchRecoveryVC.swift */; };
+		4ACDB1AD223981A600851A5E /* RecoveryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACDB1AC223981A600851A5E /* RecoveryCell.swift */; };
+		4AD22203222837F200907226 /* Soundtrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD22202222837F200907226 /* Soundtrack.swift */; };
+		4AD6D12B21D56D9D00B1A7AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AD6D12A21D56D9D00B1A7AB /* Assets.xcassets */; };
+		4AD6D12D21D5722700B1A7AB /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD6D12C21D5722700B1A7AB /* Constant.swift */; };
+		4AD6D13021D5896D00B1A7AB /* CreateNewMatchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD6D12F21D5896D00B1A7AB /* CreateNewMatchVC.swift */; };
+		4AD6D13421D58AEB00B1A7AB /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD6D13321D58AEB00B1A7AB /* SettingsVC.swift */; };
+		4AD6D13621D58AFA00B1A7AB /* VideosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD6D13521D58AFA00B1A7AB /* VideosVC.swift */; };
+		4ADD1D5221F61E02003C2CDB /* FanSheetAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADD1D5021F61E02003C2CDB /* FanSheetAction.swift */; };
+		4AE8886621F45B0D00BF280E /* MatchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE8886521F45B0D00BF280E /* MatchCell.swift */; };
+		4AEDE63721D9661C00FD99D8 /* SettingsFBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEDE63621D9661C00FD99D8 /* SettingsFBVC.swift */; };
+		4AEDE63921D9674F00FD99D8 /* SettingsImgArchiveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEDE63821D9674F00FD99D8 /* SettingsImgArchiveVC.swift */; };
+		4AEDE63B21D9791200FD99D8 /* SettingsTemTraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEDE63A21D9791200FD99D8 /* SettingsTemTraVC.swift */; };
+		4AEDE63D21D9851500FD99D8 /* SettingsSubscriptionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEDE63C21D9851500FD99D8 /* SettingsSubscriptionsVC.swift */; };
+		4AF5529B21E139B400D1ABA4 /* MatchesDetailReportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF5529A21E139B400D1ABA4 /* MatchesDetailReportVC.swift */; };
+		4AF743B92229D788002A4130 /* fanner_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AF743B82229D785002A4130 /* fanner_logo.png */; };
+		4AF8EF0521E698A50079C3EA /* VideoPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF8EF0421E698A50079C3EA /* VideoPlayerVC.swift */; };
+		4AFF5D7421D6EDE7003D5CF8 /* SettingsMarkersDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFF5D7321D6EDE7003D5CF8 /* SettingsMarkersDetailVC.swift */; };
+		4AFF5D7721D6F80B003D5CF8 /* SettingsMarkersDetailDropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFF5D7521D6F80B003D5CF8 /* SettingsMarkersDetailDropDownCell.swift */; };
+		4AFF5D7821D6F80B003D5CF8 /* SettingsMarkersDetailDropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AFF5D7621D6F80B003D5CF8 /* SettingsMarkersDetailDropDownCell.xib */; };
+		4B06CC8325FEA0F1002B7591 /* SettingsImgArchive2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B06CC8225FEA0F1002B7591 /* SettingsImgArchive2VC.swift */; };
+		4B06CC8A2601D6F5002B7591 /* MatchesMainVideoRecordLiveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B06CC892601D6F5002B7591 /* MatchesMainVideoRecordLiveVC.swift */; };
+		4B5987B426179744006FCC34 /* fanner-logo-gift.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4B5987B326179743006FCC34 /* fanner-logo-gift.gif */; };
+		4B5987CA2617AF6E006FCC34 /* GIFLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5987C92617AF6E006FCC34 /* GIFLoading.swift */; };
+		6D0D9046229BF53400A22A90 /* ConnectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0D9045229BF53400A22A90 /* ConnectController.swift */; };
+		6D0D9048229C087800A22A90 /* TagController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0D9047229C087800A22A90 /* TagController.swift */; };
+		6DEBEA2C22995E0E0014D28F /* FannerCamIPhoneKitShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEBEA2B22995E0E0014D28F /* FannerCamIPhoneKitShared.swift */; };
+		6DEBEA2E22997C510014D28F /* FannerCamWatchKitShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC5DC29229810B500CA957D /* FannerCamWatchKitShared.swift */; };
+		7FFE63FA2518848000869DF3 /* SettingsLoginLiverecapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFE63F92518848000869DF3 /* SettingsLoginLiverecapVC.swift */; };
+		8800FAC2251E33040096B853 /* AlamofireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8800FAC0251E33030096B853 /* AlamofireManager.swift */; };
+		8800FAC3251E33040096B853 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8800FAC1251E33030096B853 /* Reachability.swift */; };
+		8800FACA251E51250096B853 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8800FAC9251E51250096B853 /* UserDefaults.swift */; };
+		88AEF1562518E60F00179B35 /* SettingsLiverecapProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AEF1552518E60F00179B35 /* SettingsLiverecapProfile.swift */; };
+		88F52F7C2524C74A00F13875 /* RecapListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F52F7B2524C74A00F13875 /* RecapListVC.swift */; };
+		C4059BBD020C04D1025D1B81 /* Pods_NewFannerCamTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 594FFF1BA8E11A654E21027D /* Pods_NewFannerCamTests.framework */; };
+		C5A2F9D52295183900B625DB /* RecordingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A2F9D42295183900B625DB /* RecordingController.swift */; };
+		C5A2F9D72295187800B625DB /* GenericMarkerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A2F9D62295187800B625DB /* GenericMarkerController.swift */; };
+		C5A2F9D92295189200B625DB /* CollectiveMarkerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A2F9D82295189200B625DB /* CollectiveMarkerController.swift */; };
+		C5D17A2E2293EE280040C099 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5D17A2C2293EE280040C099 /* Interface.storyboard */; };
+		C5D17A302293EE2F0040C099 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5D17A2F2293EE2F0040C099 /* Assets.xcassets */; };
+		C5D17A372293EE300040C099 /* NewFannerCamWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C5D17A362293EE2F0040C099 /* NewFannerCamWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C5D17A3E2293EE300040C099 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D17A3D2293EE300040C099 /* ExtensionDelegate.swift */; };
+		C5D17A402293EE300040C099 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D17A3F2293EE300040C099 /* NotificationController.swift */; };
+		C5D17A422293EE300040C099 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5D17A412293EE300040C099 /* Assets.xcassets */; };
+		C5D17A472293EE310040C099 /* NewFannerCamWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C5D17A2A2293EE270040C099 /* NewFannerCamWatch.app */; };
+		C5EC49142294460D0081BE7F /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EC49132294460D0081BE7F /* SplashController.swift */; };
+		D547DAAE224B83B3000CE8E1 /* SettingTemSouHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D547DAAD224B83B3000CE8E1 /* SettingTemSouHeaderCell.swift */; };
+		D57F819022609309004DF279 /* FanGenerationVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F818E22609309004DF279 /* FanGenerationVideo.swift */; };
+		D57F819122609309004DF279 /* FanGenerationVideo.xib in Resources */ = {isa = PBXBuildFile; fileRef = D57F818F22609309004DF279 /* FanGenerationVideo.xib */; };
+		D57F819622609354004DF279 /* FanGenViewEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F819322609353004DF279 /* FanGenViewEx.swift */; };
+		D57F819722609354004DF279 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F819422609353004DF279 /* Score.swift */; };
+		D57F819822609354004DF279 /* Marker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F819522609354004DF279 /* Marker.swift */; };
+		D57F819B2260936B004DF279 /* MarkersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F81992260936B004DF279 /* MarkersView.swift */; };
+		D57F819C2260936B004DF279 /* MarkersView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D57F819A2260936B004DF279 /* MarkersView.xib */; };
+		D57F81A022609381004DF279 /* TagNumView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D57F819D22609381004DF279 /* TagNumView.xib */; };
+		D57F81A122609381004DF279 /* TagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F819E22609381004DF279 /* TagsView.swift */; };
+		D57F81A222609381004DF279 /* TagsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D57F819F22609381004DF279 /* TagsView.xib */; };
+		D57F81A52260938D004DF279 /* TagListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D57F81A32260938C004DF279 /* TagListViewCell.xib */; };
+		D57F81A62260938D004DF279 /* TagListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F81A42260938C004DF279 /* TagListViewCell.swift */; };
+		D57F81A8226093B2004DF279 /* TagNumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F81A7226093B2004DF279 /* TagNumView.swift */; };
+		D59EB6B72258DFE500C88A4F /* SettingFBSelectPageGroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59EB6B62258DFE500C88A4F /* SettingFBSelectPageGroupVC.swift */; };
+		D5B48852226AC65D007429BE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5B48851226AC65C007429BE /* GoogleService-Info.plist */; };
+		D5D334A9224E0661002AAE36 /* MainTabBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D334A8224E0661002AAE36 /* MainTabBC.swift */; };
+		D5E685F722808853009C4CFC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D5E685F622808853009C4CFC /* Default-568h@2x.png */; };
+		E40068E02248DACC00D8814F /* SettingMatchSusbscriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40068DF2248DACC00D8814F /* SettingMatchSusbscriptionCell.swift */; };
+		EBDE4003EA5F99B20BBACE15 /* Pods_NewFannerCam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF8B5AF0026BA341739AC44 /* Pods_NewFannerCam.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4ACB9C4621D156E900616C96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4ACB9C2721D156E300616C96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4ACB9C2E21D156E300616C96;
+			remoteInfo = NewFannerCam;
+		};
+		4ACB9C5121D156EA00616C96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4ACB9C2721D156E300616C96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4ACB9C2E21D156E300616C96;
+			remoteInfo = NewFannerCam;
+		};
+		C5D17A382293EE300040C099 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4ACB9C2721D156E300616C96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5D17A352293EE2F0040C099;
+			remoteInfo = "NewFannerCamWatch Extension";
+		};
+		C5D17A452293EE310040C099 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4ACB9C2721D156E300616C96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5D17A292293EE270040C099;
+			remoteInfo = NewFannerCamWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C5D17A4B2293EE310040C099 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C5D17A372293EE300040C099 /* NewFannerCamWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5D17A4F2293EE310040C099 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C5D17A472293EE310040C099 /* NewFannerCamWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		148188D4784BFCAA6E40EA02 /* Pods-NewFannerCamTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewFannerCamTests.release.xcconfig"; path = "Target Support Files/Pods-NewFannerCamTests/Pods-NewFannerCamTests.release.xcconfig"; sourceTree = "<group>"; };
+		2D274B372524B28E00F9A0D6 /* RecapListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecapListCell.swift; sourceTree = "<group>"; };
+		2DC5E1FF25401F8700E8ADF4 /* Recap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Recap.swift; path = NewFannerCam/Models/Recap.swift; sourceTree = SOURCE_ROOT; };
+		2FF8B5AF0026BA341739AC44 /* Pods_NewFannerCam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewFannerCam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39A0609B2354B9E900D48F25 /* Marker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Marker.swift; sourceTree = "<group>"; };
+		4A0019682218ADD5001CDEAD /* Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
+		4A09E73821D183970066BC24 /* MatchesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesVC.swift; sourceTree = "<group>"; };
+		4A0E53B9222C3CC900E8E2E5 /* AORangeSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AORangeSlider.swift; sourceTree = "<group>"; };
+		4A11FE992223A73F00B0D0D7 /* PhotoGalleryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryService.swift; sourceTree = "<group>"; };
+		4A1772FC21DDFC4500045BBC /* MatchesDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesDetailVC.swift; sourceTree = "<group>"; };
+		4A1772FE21DE08E900045BBC /* MatchesDetailHighlightsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesDetailHighlightsVC.swift; sourceTree = "<group>"; };
+		4A17730021DE091300045BBC /* MatchesDetailMainVideoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesDetailMainVideoVC.swift; sourceTree = "<group>"; };
+		4A1C6F2F223AE7E200C6EE7E /* banner_replay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner_replay.png; sourceTree = "<group>"; };
+		4A1E0C042200424500C047FC /* VideoProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoProcess.swift; sourceTree = "<group>"; };
+		4A1E0C06220046AB00C047FC /* MatchMainVideosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchMainVideosCell.swift; sourceTree = "<group>"; };
+		4A2499E621E2B53B007D8FE9 /* MatchesMainVideoPlayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesMainVideoPlayVC.swift; sourceTree = "<group>"; };
+		4A2A800A221B597E008F6FDC /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		4A2AE70221D6DEAB00FB5DC6 /* SettingsMarkersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsMarkersVC.swift; sourceTree = "<group>"; };
+		4A2E9558223A372400617B36 /* ScoreboardSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardSetting.swift; sourceTree = "<group>"; };
+		4A3CE94021FF570D00E83967 /* ImageProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcess.swift; sourceTree = "<group>"; };
+		4A443F1C221873B1001AA6AF /* SettingMarkerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingMarkerCell.swift; sourceTree = "<group>"; };
+		4A44E0DB222463D100179BC6 /* IAPService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPService.swift; sourceTree = "<group>"; };
+		4A44E0DE2224737E00179BC6 /* FannerCamProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FannerCamProducts.swift; sourceTree = "<group>"; };
+		4A44E0E0222498F500179BC6 /* MatchesReportClipCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesReportClipCell.swift; sourceTree = "<group>"; };
+		4A4B48EE21D18D6E001432BA /* Matches.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Matches.storyboard; sourceTree = "<group>"; };
+		4A4B48F021D18DDF001432BA /* Videos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Videos.storyboard; sourceTree = "<group>"; };
+		4A4B48F221D18DED001432BA /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		4A58456121E9218800C94150 /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		4A5B45A922173C2E009DB6BB /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		4A61A95721F3EAD000C5018F /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		4A65F52C2209C24B00DE18B4 /* FanGenerationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FanGenerationService.swift; sourceTree = "<group>"; };
+		4A65F52E2209D74900DE18B4 /* MatchClipCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchClipCell.swift; sourceTree = "<group>"; };
+		4A66A41E223E57D40058F328 /* NewFannerCam.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NewFannerCam.entitlements; sourceTree = "<group>"; };
+		4A6C7936221A828600C80842 /* SettingImgActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingImgActionCell.swift; sourceTree = "<group>"; };
+		4A6D98E921EC93A100FBB1D7 /* StopFrameEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopFrameEditVC.swift; sourceTree = "<group>"; };
+		4A6DFBCA21DFDED1002E648A /* MatchesOverlayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesOverlayVC.swift; sourceTree = "<group>"; };
+		4A750F2321EE1B260017B425 /* Clip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clip.swift; sourceTree = "<group>"; };
+		4A750F2721EE1C6C0017B425 /* StopFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopFrame.swift; sourceTree = "<group>"; };
+		4A750F2921EE1C800017B425 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		4A750F2B21EE2C790017B425 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		4A750F2D21EE38A60017B425 /* DirectoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryManager.swift; sourceTree = "<group>"; };
+		4A7CB594221E9015001B2335 /* SettingImgCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingImgCell.swift; sourceTree = "<group>"; };
+		4A7CB596221EA87E001B2335 /* ImgArchive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgArchive.swift; sourceTree = "<group>"; };
+		4A7D248321F0ED0D00F5743E /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		4A7F94D8233E55C800435409 /* TermPrivacyWebVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TermPrivacyWebVC.swift; path = NewFannerCam/Controllers/Settings/Subscriptions/TermPrivacyWebVC.swift; sourceTree = SOURCE_ROOT; };
+		4A7F94DA233E57E400435409 /* SettingMatchSusbscriptionInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingMatchSusbscriptionInfoCell.swift; sourceTree = "<group>"; };
+		4A7F94DC233E5C7800435409 /* StorePurchaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StorePurchaseVC.swift; path = NewFannerCam/Controllers/Settings/StorePurchaseVC.swift; sourceTree = SOURCE_ROOT; };
+		4A7F94DE233E653A00435409 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
+		4A8324E321FA44540061AA5D /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		4A84DEB0221170C6004DB1B3 /* AVPlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerService.swift; sourceTree = "<group>"; };
+		4A86ED24222EAE36008A6EAB /* StopFrameButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopFrameButton.swift; sourceTree = "<group>"; };
+		4A872D7A221C4CEC00A763D4 /* VideoProcessingModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoProcessingModels.swift; sourceTree = "<group>"; };
+		4A872D7D221C5BFF00A763D4 /* default_team_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default_team_logo.png; sourceTree = "<group>"; };
+		4A8A1AE821EC768300F014C8 /* StopFramePopupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopFramePopupVC.swift; sourceTree = "<group>"; };
+		4A8AB1F72235B17900559294 /* TableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewExtension.swift; sourceTree = "<group>"; };
+		4A8AB1F92235CFF400559294 /* ImageClip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClip.swift; sourceTree = "<group>"; };
+		4A8C17EE21DE935300550A57 /* MatchesDetailHighlightDropDownCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesDetailHighlightDropDownCell.swift; sourceTree = "<group>"; };
+		4A8C17EF21DE935300550A57 /* MatchesDetailHighlightDropDownCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchesDetailHighlightDropDownCell.xib; sourceTree = "<group>"; };
+		4A8C17F221DEB95000550A57 /* MatchesClipInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesClipInfoVC.swift; sourceTree = "<group>"; };
+		4A8F146B21F5237F00F73583 /* MainVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVideo.swift; sourceTree = "<group>"; };
+		4A911CCB21EF93DE000C5086 /* UserStandardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStandardManager.swift; sourceTree = "<group>"; };
+		4A911CCD21EFAD64000C5086 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		4A92E22B21E93C330094BF25 /* MessageBarService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBarService.swift; sourceTree = "<group>"; };
+		4A92EF0B222064F800C90818 /* Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
+		4A92EF0D22209BF300C90818 /* TemplateMediaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateMediaCell.swift; sourceTree = "<group>"; };
+		4A97093821F2119800E87DEC /* ValidationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationService.swift; sourceTree = "<group>"; };
+		4A97093A21F2159100E87DEC /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		4AA3810E21F60187003E6CA3 /* Utiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utiles.swift; sourceTree = "<group>"; };
+		4AB3CA3F21E3E56500E37EA7 /* MatchesMainVideoRecordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesMainVideoRecordVC.swift; sourceTree = "<group>"; };
+		4AC2C28F2238B40200A9F01E /* ClipPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipPreview.swift; sourceTree = "<group>"; };
+		4ACB9C2F21D156E300616C96 /* NewFannerCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewFannerCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ACB9C3221D156E300616C96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4ACB9C3921D156E300616C96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4ACB9C3E21D156E900616C96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4ACB9C4021D156E900616C96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4ACB9C4521D156E900616C96 /* NewFannerCamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewFannerCamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ACB9C4921D156E900616C96 /* NewFannerCamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFannerCamTests.swift; sourceTree = "<group>"; };
+		4ACB9C4B21D156EA00616C96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4ACB9C5021D156EA00616C96 /* NewFannerCamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewFannerCamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ACB9C5421D156EA00616C96 /* NewFannerCamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFannerCamUITests.swift; sourceTree = "<group>"; };
+		4ACB9C5621D156EA00616C96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4ACDB1A92239777B00851A5E /* MatchRecoveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchRecoveryVC.swift; sourceTree = "<group>"; };
+		4ACDB1AC223981A600851A5E /* RecoveryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryCell.swift; sourceTree = "<group>"; };
+		4AD22202222837F200907226 /* Soundtrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Soundtrack.swift; sourceTree = "<group>"; };
+		4AD6D12A21D56D9D00B1A7AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4AD6D12C21D5722700B1A7AB /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		4AD6D12F21D5896D00B1A7AB /* CreateNewMatchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewMatchVC.swift; sourceTree = "<group>"; };
+		4AD6D13321D58AEB00B1A7AB /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		4AD6D13521D58AFA00B1A7AB /* VideosVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosVC.swift; sourceTree = "<group>"; };
+		4ADD1D5021F61E02003C2CDB /* FanSheetAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FanSheetAction.swift; sourceTree = "<group>"; };
+		4AE8886521F45B0D00BF280E /* MatchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchCell.swift; sourceTree = "<group>"; };
+		4AEDE63621D9661C00FD99D8 /* SettingsFBVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsFBVC.swift; sourceTree = "<group>"; };
+		4AEDE63821D9674F00FD99D8 /* SettingsImgArchiveVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsImgArchiveVC.swift; sourceTree = "<group>"; };
+		4AEDE63A21D9791200FD99D8 /* SettingsTemTraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTemTraVC.swift; sourceTree = "<group>"; };
+		4AEDE63C21D9851500FD99D8 /* SettingsSubscriptionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSubscriptionsVC.swift; sourceTree = "<group>"; };
+		4AF5529A21E139B400D1ABA4 /* MatchesDetailReportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesDetailReportVC.swift; sourceTree = "<group>"; };
+		4AF743B82229D785002A4130 /* fanner_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fanner_logo.png; sourceTree = "<group>"; };
+		4AF8EF0421E698A50079C3EA /* VideoPlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerVC.swift; sourceTree = "<group>"; };
+		4AFF5D7321D6EDE7003D5CF8 /* SettingsMarkersDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsMarkersDetailVC.swift; sourceTree = "<group>"; };
+		4AFF5D7521D6F80B003D5CF8 /* SettingsMarkersDetailDropDownCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsMarkersDetailDropDownCell.swift; sourceTree = "<group>"; };
+		4AFF5D7621D6F80B003D5CF8 /* SettingsMarkersDetailDropDownCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsMarkersDetailDropDownCell.xib; sourceTree = "<group>"; };
+		4B06CC8225FEA0F1002B7591 /* SettingsImgArchive2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsImgArchive2VC.swift; path = NewFannerCam/Controllers/Settings/SettingsImgArchive2VC.swift; sourceTree = SOURCE_ROOT; };
+		4B06CC892601D6F5002B7591 /* MatchesMainVideoRecordLiveVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MatchesMainVideoRecordLiveVC.swift; path = "NewFannerCam/Controllers/Matches/Main Video/MatchesMainVideoRecordLiveVC.swift"; sourceTree = SOURCE_ROOT; };
+		4B5987B326179743006FCC34 /* fanner-logo-gift.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "fanner-logo-gift.gif"; sourceTree = "<group>"; };
+		4B5987C92617AF6E006FCC34 /* GIFLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GIFLoading.swift; path = NewFannerCam/Extensions/GIFLoading.swift; sourceTree = SOURCE_ROOT; };
+		504201594D312F7E99129DF6 /* Pods-NewFannerCamUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewFannerCamUITests.release.xcconfig"; path = "Target Support Files/Pods-NewFannerCamUITests/Pods-NewFannerCamUITests.release.xcconfig"; sourceTree = "<group>"; };
+		594FFF1BA8E11A654E21027D /* Pods_NewFannerCamTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewFannerCamTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AE6E737A872C1255FDDFA61 /* Pods-NewFannerCam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewFannerCam.debug.xcconfig"; path = "Target Support Files/Pods-NewFannerCam/Pods-NewFannerCam.debug.xcconfig"; sourceTree = "<group>"; };
+		6D0D9045229BF53400A22A90 /* ConnectController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectController.swift; sourceTree = "<group>"; };
+		6D0D9047229C087800A22A90 /* TagController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagController.swift; sourceTree = "<group>"; };
+		6DC5DC29229810B500CA957D /* FannerCamWatchKitShared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FannerCamWatchKitShared.swift; path = NewFannerCam/WatchKit/FannerCamWatchKitShared.swift; sourceTree = SOURCE_ROOT; };
+		6DEBEA2B22995E0E0014D28F /* FannerCamIPhoneKitShared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FannerCamIPhoneKitShared.swift; sourceTree = "<group>"; };
+		7FFE63F92518848000869DF3 /* SettingsLoginLiverecapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsLoginLiverecapVC.swift; path = NewFannerCam/Controllers/Settings/SettingsLoginLiverecapVC.swift; sourceTree = SOURCE_ROOT; };
+		8800FAC0251E33030096B853 /* AlamofireManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireManager.swift; sourceTree = "<group>"; };
+		8800FAC1251E33030096B853 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		8800FAC9251E51250096B853 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		88AEF1552518E60F00179B35 /* SettingsLiverecapProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsLiverecapProfile.swift; path = NewFannerCam/Controllers/Settings/SettingsLiverecapProfile.swift; sourceTree = SOURCE_ROOT; };
+		88F52F7B2524C74A00F13875 /* RecapListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RecapListVC.swift; path = NewFannerCam/Controllers/Matches/RecapListVC.swift; sourceTree = SOURCE_ROOT; };
+		AB0DCC1FCC7994F70F2B2C77 /* Pods_NewFannerCamUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewFannerCamUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACD7CE16D0A654F21ECCB9CA /* Pods-NewFannerCamTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewFannerCamTests.debug.xcconfig"; path = "Target Support Files/Pods-NewFannerCamTests/Pods-NewFannerCamTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C5A2F9D42295183900B625DB /* RecordingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingController.swift; sourceTree = "<group>"; };
+		C5A2F9D62295187800B625DB /* GenericMarkerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericMarkerController.swift; sourceTree = "<group>"; };
+		C5A2F9D82295189200B625DB /* CollectiveMarkerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectiveMarkerController.swift; sourceTree = "<group>"; };
+		C5D17A2A2293EE270040C099 /* NewFannerCamWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewFannerCamWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5D17A2D2293EE280040C099 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		C5D17A2F2293EE2F0040C099 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C5D17A312293EE2F0040C099 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5D17A362293EE2F0040C099 /* NewFannerCamWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "NewFannerCamWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5D17A3D2293EE300040C099 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		C5D17A3F2293EE300040C099 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		C5D17A412293EE300040C099 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C5D17A432293EE300040C099 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5D17A442293EE310040C099 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		C5EC49132294460D0081BE7F /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
+		CDF0B7566394496AFD57AD0C /* Pods-NewFannerCamUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewFannerCamUITests.debug.xcconfig"; path = "Target Support Files/Pods-NewFannerCamUITests/Pods-NewFannerCamUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D547DAAD224B83B3000CE8E1 /* SettingTemSouHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTemSouHeaderCell.swift; sourceTree = "<group>"; };
+		D5557DE6226922A30003E212 /* NewFannerCam-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NewFannerCam-Bridging-Header.h"; sourceTree = "<group>"; };
+		D57F818E22609309004DF279 /* FanGenerationVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FanGenerationVideo.swift; sourceTree = "<group>"; };
+		D57F818F22609309004DF279 /* FanGenerationVideo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FanGenerationVideo.xib; sourceTree = "<group>"; };
+		D57F819322609353004DF279 /* FanGenViewEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FanGenViewEx.swift; path = Model/FanGenViewEx.swift; sourceTree = "<group>"; };
+		D57F819422609353004DF279 /* Score.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Score.swift; path = Model/Score.swift; sourceTree = "<group>"; };
+		D57F819522609354004DF279 /* Marker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Marker.swift; path = Model/Marker.swift; sourceTree = "<group>"; };
+		D57F81992260936B004DF279 /* MarkersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MarkersView.swift; path = Forms/MarkersView.swift; sourceTree = "<group>"; };
+		D57F819A2260936B004DF279 /* MarkersView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MarkersView.xib; path = Forms/MarkersView.xib; sourceTree = "<group>"; };
+		D57F819D22609381004DF279 /* TagNumView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TagNumView.xib; path = Forms/TagsView/TagNumView.xib; sourceTree = "<group>"; };
+		D57F819E22609381004DF279 /* TagsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TagsView.swift; path = Forms/TagsView/TagsView.swift; sourceTree = "<group>"; };
+		D57F819F22609381004DF279 /* TagsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TagsView.xib; path = Forms/TagsView/TagsView.xib; sourceTree = "<group>"; };
+		D57F81A32260938C004DF279 /* TagListViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TagListViewCell.xib; path = Forms/TagsView/Cell/TagListViewCell.xib; sourceTree = "<group>"; };
+		D57F81A42260938C004DF279 /* TagListViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TagListViewCell.swift; path = Forms/TagsView/Cell/TagListViewCell.swift; sourceTree = "<group>"; };
+		D57F81A7226093B2004DF279 /* TagNumView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TagNumView.swift; path = "Forms/New Group/TagNumView.swift"; sourceTree = "<group>"; };
+		D59EB6B62258DFE500C88A4F /* SettingFBSelectPageGroupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingFBSelectPageGroupVC.swift; sourceTree = "<group>"; };
+		D5B48851226AC65C007429BE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D5D334A8224E0661002AAE36 /* MainTabBC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBC.swift; sourceTree = "<group>"; };
+		D5E685F622808853009C4CFC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "NewFannerCam/Default-568h@2x.png"; sourceTree = "<group>"; };
+		E40068DF2248DACC00D8814F /* SettingMatchSusbscriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingMatchSusbscriptionCell.swift; sourceTree = "<group>"; };
+		FC2BA3F026627DBBB45B55D1 /* Pods-NewFannerCam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewFannerCam.release.xcconfig"; path = "Target Support Files/Pods-NewFannerCam/Pods-NewFannerCam.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4ACB9C2C21D156E300616C96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBDE4003EA5F99B20BBACE15 /* Pods_NewFannerCam.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ACB9C4221D156E900616C96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4059BBD020C04D1025D1B81 /* Pods_NewFannerCamTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ACB9C4D21D156EA00616C96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D28C735BB82EBAE7A3B59D7 /* Pods_NewFannerCamUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB9F7D89338F8391ABCD4602 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5D17A332293EE2F0040C099 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A1BD14BC7EA3CBA1A211A84 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5AE6E737A872C1255FDDFA61 /* Pods-NewFannerCam.debug.xcconfig */,
+				FC2BA3F026627DBBB45B55D1 /* Pods-NewFannerCam.release.xcconfig */,
+				ACD7CE16D0A654F21ECCB9CA /* Pods-NewFannerCamTests.debug.xcconfig */,
+				148188D4784BFCAA6E40EA02 /* Pods-NewFannerCamTests.release.xcconfig */,
+				CDF0B7566394496AFD57AD0C /* Pods-NewFannerCamUITests.debug.xcconfig */,
+				504201594D312F7E99129DF6 /* Pods-NewFannerCamUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4A1C130F21E5532B007CB819 /* Markers */ = {
+			isa = PBXGroup;
+			children = (
+				4A2AE70221D6DEAB00FB5DC6 /* SettingsMarkersVC.swift */,
+				4AFF5D7321D6EDE7003D5CF8 /* SettingsMarkersDetailVC.swift */,
+			);
+			path = Markers;
+			sourceTree = "<group>";
+		};
+		4A1C131021E55362007CB819 /* Subscriptions */ = {
+			isa = PBXGroup;
+			children = (
+				4AEDE63C21D9851500FD99D8 /* SettingsSubscriptionsVC.swift */,
+				4A7F94D8233E55C800435409 /* TermPrivacyWebVC.swift */,
+			);
+			path = Subscriptions;
+			sourceTree = "<group>";
+		};
+		4A2499E521E2B50E007D8FE9 /* Main Video */ = {
+			isa = PBXGroup;
+			children = (
+				4A17730021DE091300045BBC /* MatchesDetailMainVideoVC.swift */,
+				4AB3CA3F21E3E56500E37EA7 /* MatchesMainVideoRecordVC.swift */,
+				4B06CC892601D6F5002B7591 /* MatchesMainVideoRecordLiveVC.swift */,
+				4A2499E621E2B53B007D8FE9 /* MatchesMainVideoPlayVC.swift */,
+				4ACDB1AB223977BC00851A5E /* RecoveryPopupViews */,
+			);
+			path = "Main Video";
+			sourceTree = "<group>";
+		};
+		4A2A8009221B5965008F6FDC /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				4A2A800A221B597E008F6FDC /* ResponseModel.swift */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		4A44E0DD2224735A00179BC6 /* IAPServices */ = {
+			isa = PBXGroup;
+			children = (
+				4A44E0DB222463D100179BC6 /* IAPService.swift */,
+				4A44E0DE2224737E00179BC6 /* FannerCamProducts.swift */,
+			);
+			name = IAPServices;
+			sourceTree = "<group>";
+		};
+		4A58456021E9215B00C94150 /* EXTENSIONS */ = {
+			isa = PBXGroup;
+			children = (
+				4AD6D12C21D5722700B1A7AB /* Constant.swift */,
+				4A58456121E9218800C94150 /* UIView+Layout.swift */,
+				4A7D248321F0ED0D00F5743E /* DateExtension.swift */,
+				4ADD1D5021F61E02003C2CDB /* FanSheetAction.swift */,
+				4A97093A21F2159100E87DEC /* StringExtension.swift */,
+				4A61A95721F3EAD000C5018F /* UIViewControllerExtension.swift */,
+				4A8AB1F72235B17900559294 /* TableViewExtension.swift */,
+				4B5987C92617AF6E006FCC34 /* GIFLoading.swift */,
+			);
+			path = EXTENSIONS;
+			sourceTree = "<group>";
+		};
+		4A6534E02239B0DA00907DB4 /* MatchSetting */ = {
+			isa = PBXGroup;
+			children = (
+				4A6DFBCA21DFDED1002E648A /* MatchesOverlayVC.swift */,
+			);
+			path = MatchSetting;
+			sourceTree = "<group>";
+		};
+		4A6DFBC921DFDE81002E648A /* Highlights */ = {
+			isa = PBXGroup;
+			children = (
+				4A1772FE21DE08E900045BBC /* MatchesDetailHighlightsVC.swift */,
+				4A8C17F221DEB95000550A57 /* MatchesClipInfoVC.swift */,
+				4AF5529A21E139B400D1ABA4 /* MatchesDetailReportVC.swift */,
+			);
+			path = Highlights;
+			sourceTree = "<group>";
+		};
+		4A7CB593221E8FE3001B2335 /* SettingImgArchive */ = {
+			isa = PBXGroup;
+			children = (
+				4A6C7936221A828600C80842 /* SettingImgActionCell.swift */,
+				4A7CB594221E9015001B2335 /* SettingImgCell.swift */,
+			);
+			path = SettingImgArchive;
+			sourceTree = "<group>";
+		};
+		4A911CCF21EFADC9000C5086 /* DataManagerServices */ = {
+			isa = PBXGroup;
+			children = (
+				4A911CCD21EFAD64000C5086 /* DataManager.swift */,
+				4A911CCB21EF93DE000C5086 /* UserStandardManager.swift */,
+			);
+			path = DataManagerServices;
+			sourceTree = "<group>";
+		};
+		4ACA370D21F7C99E009168E7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4AE8886521F45B0D00BF280E /* MatchCell.swift */,
+				4A1E0C06220046AB00C047FC /* MatchMainVideosCell.swift */,
+				4A65F52E2209D74900DE18B4 /* MatchClipCell.swift */,
+				4A44E0E0222498F500179BC6 /* MatchesReportClipCell.swift */,
+				4A8C17EE21DE935300550A57 /* MatchesDetailHighlightDropDownCell.swift */,
+				4A8C17EF21DE935300550A57 /* MatchesDetailHighlightDropDownCell.xib */,
+				4A5B45A922173C2E009DB6BB /* VideoCell.swift */,
+				4A443F1C221873B1001AA6AF /* SettingMarkerCell.swift */,
+				4AFF5D7521D6F80B003D5CF8 /* SettingsMarkersDetailDropDownCell.swift */,
+				4AFF5D7621D6F80B003D5CF8 /* SettingsMarkersDetailDropDownCell.xib */,
+				4A7CB593221E8FE3001B2335 /* SettingImgArchive */,
+				E40068DF2248DACC00D8814F /* SettingMatchSusbscriptionCell.swift */,
+				D547DAAD224B83B3000CE8E1 /* SettingTemSouHeaderCell.swift */,
+				4A92EF0D22209BF300C90818 /* TemplateMediaCell.swift */,
+				4A7F94DA233E57E400435409 /* SettingMatchSusbscriptionInfoCell.swift */,
+				2D274B372524B28E00F9A0D6 /* RecapListCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4ACB9C2621D156E300616C96 = {
+			isa = PBXGroup;
+			children = (
+				D5E685F622808853009C4CFC /* Default-568h@2x.png */,
+				4B5987B326179743006FCC34 /* fanner-logo-gift.gif */,
+				4ACB9C3121D156E300616C96 /* NewFannerCam */,
+				4ACB9C4821D156E900616C96 /* NewFannerCamTests */,
+				4ACB9C5321D156EA00616C96 /* NewFannerCamUITests */,
+				C5D17A2B2293EE280040C099 /* NewFannerCamWatch */,
+				C5D17A3A2293EE300040C099 /* NewFannerCamWatch Extension */,
+				4ACB9C3021D156E300616C96 /* Products */,
+				6D21256B6D0D24E1EA00B03E /* Frameworks */,
+				3A1BD14BC7EA3CBA1A211A84 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		4ACB9C3021D156E300616C96 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4ACB9C2F21D156E300616C96 /* NewFannerCam.app */,
+				4ACB9C4521D156E900616C96 /* NewFannerCamTests.xctest */,
+				4ACB9C5021D156EA00616C96 /* NewFannerCamUITests.xctest */,
+				C5D17A2A2293EE270040C099 /* NewFannerCamWatch.app */,
+				C5D17A362293EE2F0040C099 /* NewFannerCamWatch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4ACB9C3121D156E300616C96 /* NewFannerCam */ = {
+			isa = PBXGroup;
+			children = (
+				4A66A41E223E57D40058F328 /* NewFannerCam.entitlements */,
+				8800FABF251E33030096B853 /* Helper */,
+				6DC5DC2B229810BF00CA957D /* WatchKit */,
+				4A58456021E9215B00C94150 /* EXTENSIONS */,
+				4AF87E2021EA7D42008F9E45 /* SERVICES */,
+				4ACB9C6721D1580700616C96 /* MODELS */,
+				4ACB9C6621D157FF00616C96 /* VIEWS */,
+				4ACB9C6321D1577F00616C96 /* CONTROLLERS */,
+				4ACB9C6421D1578800616C96 /* STORYBOARDS */,
+				4ACB9C6521D157F200616C96 /* RESOURCES */,
+				4ACB9C6221D1576600616C96 /* SupportedFiles */,
+			);
+			path = NewFannerCam;
+			sourceTree = "<group>";
+		};
+		4ACB9C4821D156E900616C96 /* NewFannerCamTests */ = {
+			isa = PBXGroup;
+			children = (
+				4ACB9C4921D156E900616C96 /* NewFannerCamTests.swift */,
+				4ACB9C4B21D156EA00616C96 /* Info.plist */,
+			);
+			path = NewFannerCamTests;
+			sourceTree = "<group>";
+		};
+		4ACB9C5321D156EA00616C96 /* NewFannerCamUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4ACB9C5421D156EA00616C96 /* NewFannerCamUITests.swift */,
+				4ACB9C5621D156EA00616C96 /* Info.plist */,
+			);
+			path = NewFannerCamUITests;
+			sourceTree = "<group>";
+		};
+		4ACB9C6221D1576600616C96 /* SupportedFiles */ = {
+			isa = PBXGroup;
+			children = (
+				4ACB9C3221D156E300616C96 /* AppDelegate.swift */,
+				D5B48851226AC65C007429BE /* GoogleService-Info.plist */,
+				4ACB9C4021D156E900616C96 /* Info.plist */,
+				D5557DE6226922A30003E212 /* NewFannerCam-Bridging-Header.h */,
+			);
+			path = SupportedFiles;
+			sourceTree = "<group>";
+		};
+		4ACB9C6321D1577F00616C96 /* CONTROLLERS */ = {
+			isa = PBXGroup;
+			children = (
+				D5D334A8224E0661002AAE36 /* MainTabBC.swift */,
+				4AD6D12E21D5894B00B1A7AB /* Matches */,
+				4AD6D13121D58AC000B1A7AB /* Videos */,
+				4AD6D13221D58ACE00B1A7AB /* Settings */,
+			);
+			path = CONTROLLERS;
+			sourceTree = "<group>";
+		};
+		4ACB9C6421D1578800616C96 /* STORYBOARDS */ = {
+			isa = PBXGroup;
+			children = (
+				4ACB9C3D21D156E900616C96 /* LaunchScreen.storyboard */,
+				4ACB9C3821D156E300616C96 /* Main.storyboard */,
+				4A4B48EE21D18D6E001432BA /* Matches.storyboard */,
+				4A4B48F021D18DDF001432BA /* Videos.storyboard */,
+				4A4B48F221D18DED001432BA /* Settings.storyboard */,
+			);
+			path = STORYBOARDS;
+			sourceTree = "<group>";
+		};
+		4ACB9C6521D157F200616C96 /* RESOURCES */ = {
+			isa = PBXGroup;
+			children = (
+				4A1C6F2F223AE7E200C6EE7E /* banner_replay.png */,
+				4AF743B82229D785002A4130 /* fanner_logo.png */,
+				4A872D7D221C5BFF00A763D4 /* default_team_logo.png */,
+				4AD6D12A21D56D9D00B1A7AB /* Assets.xcassets */,
+			);
+			path = RESOURCES;
+			sourceTree = "<group>";
+		};
+		4ACB9C6621D157FF00616C96 /* VIEWS */ = {
+			isa = PBXGroup;
+			children = (
+				4AC2C28F2238B40200A9F01E /* ClipPreview.swift */,
+				4A0E53B9222C3CC900E8E2E5 /* AORangeSlider.swift */,
+				4A86ED24222EAE36008A6EAB /* StopFrameButton.swift */,
+				D57F818D226092AE004DF279 /* FanGenView */,
+				4ACA370D21F7C99E009168E7 /* Cells */,
+			);
+			name = VIEWS;
+			path = View;
+			sourceTree = "<group>";
+		};
+		4ACB9C6721D1580700616C96 /* MODELS */ = {
+			isa = PBXGroup;
+			children = (
+				4A2A8009221B5965008F6FDC /* Http */,
+				4A750F2321EE1B260017B425 /* Clip.swift */,
+				4A8AB1F92235CFF400559294 /* ImageClip.swift */,
+				4A750F2921EE1C800017B425 /* Match.swift */,
+				4A2E9558223A372400617B36 /* ScoreboardSetting.swift */,
+				4A750F2B21EE2C790017B425 /* Video.swift */,
+				4A750F2721EE1C6C0017B425 /* StopFrame.swift */,
+				4A8F146B21F5237F00F73583 /* MainVideo.swift */,
+				4A7CB596221EA87E001B2335 /* ImgArchive.swift */,
+				4A92EF0B222064F800C90818 /* Template.swift */,
+				4AD22202222837F200907226 /* Soundtrack.swift */,
+				4A872D7A221C4CEC00A763D4 /* VideoProcessingModels.swift */,
+				2DC5E1FF25401F8700E8ADF4 /* Recap.swift */,
+			);
+			path = MODELS;
+			sourceTree = "<group>";
+		};
+		4ACDB1AB223977BC00851A5E /* RecoveryPopupViews */ = {
+			isa = PBXGroup;
+			children = (
+				4ACDB1A92239777B00851A5E /* MatchRecoveryVC.swift */,
+				4ACDB1AC223981A600851A5E /* RecoveryCell.swift */,
+			);
+			path = RecoveryPopupViews;
+			sourceTree = "<group>";
+		};
+		4AD6D12E21D5894B00B1A7AB /* Matches */ = {
+			isa = PBXGroup;
+			children = (
+				4A09E73821D183970066BC24 /* MatchesVC.swift */,
+				4AD6D12F21D5896D00B1A7AB /* CreateNewMatchVC.swift */,
+				4A1772FC21DDFC4500045BBC /* MatchesDetailVC.swift */,
+				4A6DFBC921DFDE81002E648A /* Highlights */,
+				4A2499E521E2B50E007D8FE9 /* Main Video */,
+				4A6534E02239B0DA00907DB4 /* MatchSetting */,
+				88F52F7B2524C74A00F13875 /* RecapListVC.swift */,
+			);
+			path = Matches;
+			sourceTree = "<group>";
+		};
+		4AD6D13121D58AC000B1A7AB /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				4AD6D13521D58AFA00B1A7AB /* VideosVC.swift */,
+				4AF8EF0421E698A50079C3EA /* VideoPlayerVC.swift */,
+				4A8A1AE821EC768300F014C8 /* StopFramePopupVC.swift */,
+				4A6D98E921EC93A100FBB1D7 /* StopFrameEditVC.swift */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+		4AD6D13221D58ACE00B1A7AB /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				4AD6D13321D58AEB00B1A7AB /* SettingsVC.swift */,
+				D59F5B3C2256539D0060D2E7 /* SettingYoutube */,
+				4A1C131021E55362007CB819 /* Subscriptions */,
+				4A1C130F21E5532B007CB819 /* Markers */,
+				4AEDE63821D9674F00FD99D8 /* SettingsImgArchiveVC.swift */,
+				4B06CC8225FEA0F1002B7591 /* SettingsImgArchive2VC.swift */,
+				4AEDE63A21D9791200FD99D8 /* SettingsTemTraVC.swift */,
+				4A7F94DC233E5C7800435409 /* StorePurchaseVC.swift */,
+				7FFE63F92518848000869DF3 /* SettingsLoginLiverecapVC.swift */,
+				88AEF1552518E60F00179B35 /* SettingsLiverecapProfile.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		4AF87E2021EA7D42008F9E45 /* SERVICES */ = {
+			isa = PBXGroup;
+			children = (
+				4A911CCF21EFADC9000C5086 /* DataManagerServices */,
+				4A750F2D21EE38A60017B425 /* DirectoryManager.swift */,
+				4A92E22B21E93C330094BF25 /* MessageBarService.swift */,
+				4A97093821F2119800E87DEC /* ValidationService.swift */,
+				4AA3810E21F60187003E6CA3 /* Utiles.swift */,
+				4A8324E321FA44540061AA5D /* CameraService.swift */,
+				4A84DEB0221170C6004DB1B3 /* AVPlayerService.swift */,
+				4A3CE94021FF570D00E83967 /* ImageProcess.swift */,
+				4A1E0C042200424500C047FC /* VideoProcess.swift */,
+				4A65F52C2209C24B00DE18B4 /* FanGenerationService.swift */,
+				4A0019682218ADD5001CDEAD /* Downloader.swift */,
+				4A44E0DD2224735A00179BC6 /* IAPServices */,
+				4A11FE992223A73F00B0D0D7 /* PhotoGalleryService.swift */,
+			);
+			path = SERVICES;
+			sourceTree = "<group>";
+		};
+		6D21256B6D0D24E1EA00B03E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A7F94DE233E653A00435409 /* WatchConnectivity.framework */,
+				2FF8B5AF0026BA341739AC44 /* Pods_NewFannerCam.framework */,
+				594FFF1BA8E11A654E21027D /* Pods_NewFannerCamTests.framework */,
+				AB0DCC1FCC7994F70F2B2C77 /* Pods_NewFannerCamUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6DC5DC2B229810BF00CA957D /* WatchKit */ = {
+			isa = PBXGroup;
+			children = (
+				6DC5DC29229810B500CA957D /* FannerCamWatchKitShared.swift */,
+				6DEBEA2B22995E0E0014D28F /* FannerCamIPhoneKitShared.swift */,
+			);
+			path = WatchKit;
+			sourceTree = "<group>";
+		};
+		8800FABF251E33030096B853 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				8800FAC0251E33030096B853 /* AlamofireManager.swift */,
+				8800FAC1251E33030096B853 /* Reachability.swift */,
+				8800FAC9251E51250096B853 /* UserDefaults.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		C5D17A2B2293EE280040C099 /* NewFannerCamWatch */ = {
+			isa = PBXGroup;
+			children = (
+				C5D17A2C2293EE280040C099 /* Interface.storyboard */,
+				C5D17A2F2293EE2F0040C099 /* Assets.xcassets */,
+				C5D17A312293EE2F0040C099 /* Info.plist */,
+			);
+			path = NewFannerCamWatch;
+			sourceTree = "<group>";
+		};
+		C5D17A3A2293EE300040C099 /* NewFannerCamWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				39A0609B2354B9E900D48F25 /* Marker.swift */,
+				C5EC49132294460D0081BE7F /* SplashController.swift */,
+				6D0D9045229BF53400A22A90 /* ConnectController.swift */,
+				C5A2F9D42295183900B625DB /* RecordingController.swift */,
+				C5A2F9D62295187800B625DB /* GenericMarkerController.swift */,
+				C5A2F9D82295189200B625DB /* CollectiveMarkerController.swift */,
+				6D0D9047229C087800A22A90 /* TagController.swift */,
+				C5D17A3D2293EE300040C099 /* ExtensionDelegate.swift */,
+				C5D17A3F2293EE300040C099 /* NotificationController.swift */,
+				C5D17A412293EE300040C099 /* Assets.xcassets */,
+				C5D17A432293EE300040C099 /* Info.plist */,
+				C5D17A442293EE310040C099 /* PushNotificationPayload.apns */,
+			);
+			path = "NewFannerCamWatch Extension";
+			sourceTree = "<group>";
+		};
+		D57F818D226092AE004DF279 /* FanGenView */ = {
+			isa = PBXGroup;
+			children = (
+				D57F818E22609309004DF279 /* FanGenerationVideo.swift */,
+				D57F818F22609309004DF279 /* FanGenerationVideo.xib */,
+				D57F81992260936B004DF279 /* MarkersView.swift */,
+				D57F819A2260936B004DF279 /* MarkersView.xib */,
+				D57F81A7226093B2004DF279 /* TagNumView.swift */,
+				D57F819D22609381004DF279 /* TagNumView.xib */,
+				D57F819E22609381004DF279 /* TagsView.swift */,
+				D57F819F22609381004DF279 /* TagsView.xib */,
+				D57F81A42260938C004DF279 /* TagListViewCell.swift */,
+				D57F81A32260938C004DF279 /* TagListViewCell.xib */,
+				D57F819322609353004DF279 /* FanGenViewEx.swift */,
+				D57F819522609354004DF279 /* Marker.swift */,
+				D57F819422609353004DF279 /* Score.swift */,
+			);
+			path = FanGenView;
+			sourceTree = "<group>";
+		};
+		D59F5B3C2256539D0060D2E7 /* SettingYoutube */ = {
+			isa = PBXGroup;
+			children = (
+				4AEDE63621D9661C00FD99D8 /* SettingsFBVC.swift */,
+				D59EB6B62258DFE500C88A4F /* SettingFBSelectPageGroupVC.swift */,
+			);
+			path = SettingYoutube;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4ACB9C2E21D156E300616C96 /* NewFannerCam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4ACB9C5921D156EA00616C96 /* Build configuration list for PBXNativeTarget "NewFannerCam" */;
+			buildPhases = (
+				B84A70DD13792AADE646795D /* [CP] Check Pods Manifest.lock */,
+				D6AE4FFCDFAFD0DBCCAAC43A /* Compile Binary Libraries */,
+				4ACB9C2B21D156E300616C96 /* Sources */,
+				4ACB9C2C21D156E300616C96 /* Frameworks */,
+				4ACB9C2D21D156E300616C96 /* Resources */,
+				C5D17A4F2293EE310040C099 /* Embed Watch Content */,
+				AFF96BE7C72174364CDFCD0D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5D17A462293EE310040C099 /* PBXTargetDependency */,
+			);
+			name = NewFannerCam;
+			productName = NewFannerCam;
+			productReference = 4ACB9C2F21D156E300616C96 /* NewFannerCam.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4ACB9C4421D156E900616C96 /* NewFannerCamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4ACB9C5C21D156EA00616C96 /* Build configuration list for PBXNativeTarget "NewFannerCamTests" */;
+			buildPhases = (
+				5922B5D10C38786A53D0EB39 /* [CP] Check Pods Manifest.lock */,
+				4ACB9C4121D156E900616C96 /* Sources */,
+				4ACB9C4221D156E900616C96 /* Frameworks */,
+				4ACB9C4321D156E900616C96 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4ACB9C4721D156E900616C96 /* PBXTargetDependency */,
+			);
+			name = NewFannerCamTests;
+			productName = NewFannerCamTests;
+			productReference = 4ACB9C4521D156E900616C96 /* NewFannerCamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4ACB9C4F21D156EA00616C96 /* NewFannerCamUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4ACB9C5F21D156EA00616C96 /* Build configuration list for PBXNativeTarget "NewFannerCamUITests" */;
+			buildPhases = (
+				487964E5DA290A0072E305C9 /* [CP] Check Pods Manifest.lock */,
+				4ACB9C4C21D156EA00616C96 /* Sources */,
+				4ACB9C4D21D156EA00616C96 /* Frameworks */,
+				4ACB9C4E21D156EA00616C96 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4ACB9C5221D156EA00616C96 /* PBXTargetDependency */,
+			);
+			name = NewFannerCamUITests;
+			productName = NewFannerCamUITests;
+			productReference = 4ACB9C5021D156EA00616C96 /* NewFannerCamUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		C5D17A292293EE270040C099 /* NewFannerCamWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5D17A4C2293EE310040C099 /* Build configuration list for PBXNativeTarget "NewFannerCamWatch" */;
+			buildPhases = (
+				C5D17A282293EE270040C099 /* Resources */,
+				C5D17A4B2293EE310040C099 /* Embed App Extensions */,
+				BB9F7D89338F8391ABCD4602 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5D17A392293EE300040C099 /* PBXTargetDependency */,
+			);
+			name = NewFannerCamWatch;
+			productName = NewFannerCamWatch;
+			productReference = C5D17A2A2293EE270040C099 /* NewFannerCamWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		C5D17A352293EE2F0040C099 /* NewFannerCamWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5D17A482293EE310040C099 /* Build configuration list for PBXNativeTarget "NewFannerCamWatch Extension" */;
+			buildPhases = (
+				C5D17A322293EE2F0040C099 /* Sources */,
+				C5D17A332293EE2F0040C099 /* Frameworks */,
+				C5D17A342293EE2F0040C099 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NewFannerCamWatch Extension";
+			productName = "NewFannerCamWatch Extension";
+			productReference = C5D17A362293EE2F0040C099 /* NewFannerCamWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4ACB9C2721D156E300616C96 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = fannercam3;
+				TargetAttributes = {
+					4ACB9C2E21D156E300616C96 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1120;
+						SystemCapabilities = {
+							com.apple.DataProtection = {
+								enabled = 0;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
+					};
+					4ACB9C4421D156E900616C96 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1120;
+						TestTargetID = 4ACB9C2E21D156E300616C96;
+					};
+					4ACB9C4F21D156EA00616C96 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1120;
+						TestTargetID = 4ACB9C2E21D156E300616C96;
+					};
+					C5D17A292293EE270040C099 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					C5D17A352293EE2F0040C099 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1120;
+					};
+				};
+			};
+			buildConfigurationList = 4ACB9C2A21D156E300616C96 /* Build configuration list for PBXProject "NewFannerCam" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4ACB9C2621D156E300616C96;
+			productRefGroup = 4ACB9C3021D156E300616C96 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4ACB9C2E21D156E300616C96 /* NewFannerCam */,
+				4ACB9C4421D156E900616C96 /* NewFannerCamTests */,
+				4ACB9C4F21D156EA00616C96 /* NewFannerCamUITests */,
+				C5D17A292293EE270040C099 /* NewFannerCamWatch */,
+				C5D17A352293EE2F0040C099 /* NewFannerCamWatch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4ACB9C2D21D156E300616C96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AF743B92229D788002A4130 /* fanner_logo.png in Resources */,
+				4A4B48F121D18DDF001432BA /* Videos.storyboard in Resources */,
+				D57F81A52260938D004DF279 /* TagListViewCell.xib in Resources */,
+				4ACB9C3F21D156E900616C96 /* LaunchScreen.storyboard in Resources */,
+				4A4B48EF21D18D6E001432BA /* Matches.storyboard in Resources */,
+				4A1C6F30223AE7E200C6EE7E /* banner_replay.png in Resources */,
+				4ACB9C3A21D156E300616C96 /* Main.storyboard in Resources */,
+				D57F81A022609381004DF279 /* TagNumView.xib in Resources */,
+				4B5987B426179744006FCC34 /* fanner-logo-gift.gif in Resources */,
+				D57F81A222609381004DF279 /* TagsView.xib in Resources */,
+				4A872D7E221C5C0000A763D4 /* default_team_logo.png in Resources */,
+				D5B48852226AC65D007429BE /* GoogleService-Info.plist in Resources */,
+				D5E685F722808853009C4CFC /* Default-568h@2x.png in Resources */,
+				4A8C17F121DE935300550A57 /* MatchesDetailHighlightDropDownCell.xib in Resources */,
+				4AFF5D7821D6F80B003D5CF8 /* SettingsMarkersDetailDropDownCell.xib in Resources */,
+				4AD6D12B21D56D9D00B1A7AB /* Assets.xcassets in Resources */,
+				4A4B48F321D18DED001432BA /* Settings.storyboard in Resources */,
+				D57F819C2260936B004DF279 /* MarkersView.xib in Resources */,
+				D57F819122609309004DF279 /* FanGenerationVideo.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ACB9C4321D156E900616C96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ACB9C4E21D156EA00616C96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5D17A282293EE270040C099 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5D17A302293EE2F0040C099 /* Assets.xcassets in Resources */,
+				C5D17A2E2293EE280040C099 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5D17A342293EE2F0040C099 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5D17A422293EE300040C099 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		487964E5DA290A0072E305C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NewFannerCamUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5922B5D10C38786A53D0EB39 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NewFannerCamTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFF96BE7C72174364CDFCD0D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NewFannerCam/Pods-NewFannerCam-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NewFannerCam/Pods-NewFannerCam-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NewFannerCam/Pods-NewFannerCam-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B84A70DD13792AADE646795D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NewFannerCam-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6AE4FFCDFAFD0DBCCAAC43A /* Compile Binary Libraries */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Compile Binary Libraries";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n\n\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/Asset.xcasset\" false";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4ACB9C2B21D156E300616C96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AEDE63D21D9851500FD99D8 /* SettingsSubscriptionsVC.swift in Sources */,
+				4AF8EF0521E698A50079C3EA /* VideoPlayerVC.swift in Sources */,
+				4A44E0E1222498F500179BC6 /* MatchesReportClipCell.swift in Sources */,
+				4B5987CA2617AF6E006FCC34 /* GIFLoading.swift in Sources */,
+				4AC2C2902238B40200A9F01E /* ClipPreview.swift in Sources */,
+				4AF5529B21E139B400D1ABA4 /* MatchesDetailReportVC.swift in Sources */,
+				4A09E73921D183970066BC24 /* MatchesVC.swift in Sources */,
+				4A911CCC21EF93DE000C5086 /* UserStandardManager.swift in Sources */,
+				D57F819722609354004DF279 /* Score.swift in Sources */,
+				4A5B45AA22173C2E009DB6BB /* VideoCell.swift in Sources */,
+				4A97093921F2119800E87DEC /* ValidationService.swift in Sources */,
+				4A65F52D2209C24B00DE18B4 /* FanGenerationService.swift in Sources */,
+				4A750F2421EE1B260017B425 /* Clip.swift in Sources */,
+				4A7F94DD233E5C7800435409 /* StorePurchaseVC.swift in Sources */,
+				4A58456221E9218800C94150 /* UIView+Layout.swift in Sources */,
+				4A8C17F021DE935300550A57 /* MatchesDetailHighlightDropDownCell.swift in Sources */,
+				4B06CC8325FEA0F1002B7591 /* SettingsImgArchive2VC.swift in Sources */,
+				4A8F146C21F5238000F73583 /* MainVideo.swift in Sources */,
+				D57F81A62260938D004DF279 /* TagListViewCell.swift in Sources */,
+				6DEBEA2C22995E0E0014D28F /* FannerCamIPhoneKitShared.swift in Sources */,
+				4A6C7937221A828600C80842 /* SettingImgActionCell.swift in Sources */,
+				4A443F1D221873B1001AA6AF /* SettingMarkerCell.swift in Sources */,
+				6DEBEA2E22997C510014D28F /* FannerCamWatchKitShared.swift in Sources */,
+				4AEDE63B21D9791200FD99D8 /* SettingsTemTraVC.swift in Sources */,
+				2DC5E20025401F8700E8ADF4 /* Recap.swift in Sources */,
+				4A11FE9A2223A73F00B0D0D7 /* PhotoGalleryService.swift in Sources */,
+				4A2AE70321D6DEAB00FB5DC6 /* SettingsMarkersVC.swift in Sources */,
+				4ACDB1AD223981A600851A5E /* RecoveryCell.swift in Sources */,
+				4A7CB595221E9015001B2335 /* SettingImgCell.swift in Sources */,
+				4AD6D13421D58AEB00B1A7AB /* SettingsVC.swift in Sources */,
+				D57F81A122609381004DF279 /* TagsView.swift in Sources */,
+				4A86ED25222EAE36008A6EAB /* StopFrameButton.swift in Sources */,
+				4AFF5D7421D6EDE7003D5CF8 /* SettingsMarkersDetailVC.swift in Sources */,
+				4A1E0C052200424500C047FC /* VideoProcess.swift in Sources */,
+				4AB3CA4021E3E56500E37EA7 /* MatchesMainVideoRecordVC.swift in Sources */,
+				4A1E0C07220046AB00C047FC /* MatchMainVideosCell.swift in Sources */,
+				4A92E22C21E93C330094BF25 /* MessageBarService.swift in Sources */,
+				4A1772FF21DE08E900045BBC /* MatchesDetailHighlightsVC.swift in Sources */,
+				7FFE63FA2518848000869DF3 /* SettingsLoginLiverecapVC.swift in Sources */,
+				8800FACA251E51250096B853 /* UserDefaults.swift in Sources */,
+				4AEDE63721D9661C00FD99D8 /* SettingsFBVC.swift in Sources */,
+				4A8A1AE921EC768300F014C8 /* StopFramePopupVC.swift in Sources */,
+				4A750F2C21EE2C790017B425 /* Video.swift in Sources */,
+				4A872D7B221C4CEC00A763D4 /* VideoProcessingModels.swift in Sources */,
+				4A8AB1FA2235CFF400559294 /* ImageClip.swift in Sources */,
+				4A0019692218ADD5001CDEAD /* Downloader.swift in Sources */,
+				4A8AB1F82235B17900559294 /* TableViewExtension.swift in Sources */,
+				88F52F7C2524C74A00F13875 /* RecapListVC.swift in Sources */,
+				4A7CB597221EA87E001B2335 /* ImgArchive.swift in Sources */,
+				4A911CCE21EFAD64000C5086 /* DataManager.swift in Sources */,
+				4A750F2821EE1C6C0017B425 /* StopFrame.swift in Sources */,
+				4A92EF0C222064F800C90818 /* Template.swift in Sources */,
+				4A44E0DC222463D100179BC6 /* IAPService.swift in Sources */,
+				4ADD1D5221F61E02003C2CDB /* FanSheetAction.swift in Sources */,
+				4A6DFBCB21DFDED1002E648A /* MatchesOverlayVC.swift in Sources */,
+				D57F819B2260936B004DF279 /* MarkersView.swift in Sources */,
+				4A2499E721E2B53B007D8FE9 /* MatchesMainVideoPlayVC.swift in Sources */,
+				4A84DEB1221170C6004DB1B3 /* AVPlayerService.swift in Sources */,
+				4A61A95821F3EAD000C5018F /* UIViewControllerExtension.swift in Sources */,
+				D57F819022609309004DF279 /* FanGenerationVideo.swift in Sources */,
+				4A8324E421FA44540061AA5D /* CameraService.swift in Sources */,
+				D57F81A8226093B2004DF279 /* TagNumView.swift in Sources */,
+				4B06CC8A2601D6F5002B7591 /* MatchesMainVideoRecordLiveVC.swift in Sources */,
+				D547DAAE224B83B3000CE8E1 /* SettingTemSouHeaderCell.swift in Sources */,
+				4ACDB1AA2239777B00851A5E /* MatchRecoveryVC.swift in Sources */,
+				4A1772FD21DDFC4500045BBC /* MatchesDetailVC.swift in Sources */,
+				4A65F52F2209D74900DE18B4 /* MatchClipCell.swift in Sources */,
+				4ACB9C3321D156E300616C96 /* AppDelegate.swift in Sources */,
+				4AA3810F21F60187003E6CA3 /* Utiles.swift in Sources */,
+				4A750F2A21EE1C800017B425 /* Match.swift in Sources */,
+				E40068E02248DACC00D8814F /* SettingMatchSusbscriptionCell.swift in Sources */,
+				D5D334A9224E0661002AAE36 /* MainTabBC.swift in Sources */,
+				4A6D98EA21EC93A100FBB1D7 /* StopFrameEditVC.swift in Sources */,
+				4A2A800B221B597E008F6FDC /* ResponseModel.swift in Sources */,
+				8800FAC2251E33040096B853 /* AlamofireManager.swift in Sources */,
+				4A17730121DE091300045BBC /* MatchesDetailMainVideoVC.swift in Sources */,
+				4AD22203222837F200907226 /* Soundtrack.swift in Sources */,
+				4A7D248421F0ED0D00F5743E /* DateExtension.swift in Sources */,
+				4AEDE63921D9674F00FD99D8 /* SettingsImgArchiveVC.swift in Sources */,
+				4AD6D13621D58AFA00B1A7AB /* VideosVC.swift in Sources */,
+				4A8C17F321DEB95000550A57 /* MatchesClipInfoVC.swift in Sources */,
+				4AE8886621F45B0D00BF280E /* MatchCell.swift in Sources */,
+				4A7F94DB233E57E400435409 /* SettingMatchSusbscriptionInfoCell.swift in Sources */,
+				D57F819622609354004DF279 /* FanGenViewEx.swift in Sources */,
+				4AFF5D7721D6F80B003D5CF8 /* SettingsMarkersDetailDropDownCell.swift in Sources */,
+				4A97093B21F2159100E87DEC /* StringExtension.swift in Sources */,
+				8800FAC3251E33040096B853 /* Reachability.swift in Sources */,
+				88AEF1562518E60F00179B35 /* SettingsLiverecapProfile.swift in Sources */,
+				4A92EF0E22209BF300C90818 /* TemplateMediaCell.swift in Sources */,
+				4A750F2E21EE38A60017B425 /* DirectoryManager.swift in Sources */,
+				4A2E9559223A372500617B36 /* ScoreboardSetting.swift in Sources */,
+				D59EB6B72258DFE500C88A4F /* SettingFBSelectPageGroupVC.swift in Sources */,
+				4A3CE94121FF570D00E83967 /* ImageProcess.swift in Sources */,
+				D57F819822609354004DF279 /* Marker.swift in Sources */,
+				4A7F94D9233E55C800435409 /* TermPrivacyWebVC.swift in Sources */,
+				4A0E53BA222C3CC900E8E2E5 /* AORangeSlider.swift in Sources */,
+				4A44E0DF2224737E00179BC6 /* FannerCamProducts.swift in Sources */,
+				2D274B382524B28E00F9A0D6 /* RecapListCell.swift in Sources */,
+				4AD6D13021D5896D00B1A7AB /* CreateNewMatchVC.swift in Sources */,
+				4AD6D12D21D5722700B1A7AB /* Constant.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ACB9C4121D156E900616C96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ACB9C4A21D156E900616C96 /* NewFannerCamTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ACB9C4C21D156EA00616C96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ACB9C5521D156EA00616C96 /* NewFannerCamUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5D17A322293EE2F0040C099 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5D17A402293EE300040C099 /* NotificationController.swift in Sources */,
+				C5A2F9D52295183900B625DB /* RecordingController.swift in Sources */,
+				C5A2F9D92295189200B625DB /* CollectiveMarkerController.swift in Sources */,
+				C5D17A3E2293EE300040C099 /* ExtensionDelegate.swift in Sources */,
+				6D0D9046229BF53400A22A90 /* ConnectController.swift in Sources */,
+				C5EC49142294460D0081BE7F /* SplashController.swift in Sources */,
+				6D0D9048229C087800A22A90 /* TagController.swift in Sources */,
+				C5A2F9D72295187800B625DB /* GenericMarkerController.swift in Sources */,
+				39A0609C2354B9E900D48F25 /* Marker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4ACB9C4721D156E900616C96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4ACB9C2E21D156E300616C96 /* NewFannerCam */;
+			targetProxy = 4ACB9C4621D156E900616C96 /* PBXContainerItemProxy */;
+		};
+		4ACB9C5221D156EA00616C96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4ACB9C2E21D156E300616C96 /* NewFannerCam */;
+			targetProxy = 4ACB9C5121D156EA00616C96 /* PBXContainerItemProxy */;
+		};
+		C5D17A392293EE300040C099 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5D17A352293EE2F0040C099 /* NewFannerCamWatch Extension */;
+			targetProxy = C5D17A382293EE300040C099 /* PBXContainerItemProxy */;
+		};
+		C5D17A462293EE310040C099 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5D17A292293EE270040C099 /* NewFannerCamWatch */;
+			targetProxy = C5D17A452293EE310040C099 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4ACB9C3821D156E300616C96 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4ACB9C3921D156E300616C96 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4ACB9C3D21D156E900616C96 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4ACB9C3E21D156E900616C96 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C5D17A2C2293EE280040C099 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5D17A2D2293EE280040C099 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4ACB9C5721D156EA00616C96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		4ACB9C5821D156EA00616C96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4ACB9C5A21D156EA00616C96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AE6E737A872C1255FDDFA61 /* Pods-NewFannerCam.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.2;
+				DEVELOPMENT_TEAM = 54T682WX35;
+				INFOPLIST_FILE = "$(SRCROOT)/NewFannerCam/SupportedFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 7.3.4;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-iquote",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Bolts/Bolts.framework/Headers\"",
+					"-iquote",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers\"",
+					"-iquote",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/JGProgressHUD/JGProgressHUD.framework/Headers\"",
+					"-iquote",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/UriParser-cpp/UriParser.framework/Headers\"",
+					"-iquote",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/VideoCore/videocore.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/glm\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fanner.fannerApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "NewFannerCam/SupportedFiles/NewFannerCam-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4ACB9C5B21D156EA00616C96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC2BA3F026627DBBB45B55D1 /* Pods-NewFannerCam.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.2;
+				DEVELOPMENT_TEAM = 54T682WX35;
+				INFOPLIST_FILE = "$(SRCROOT)/NewFannerCam/SupportedFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 7.3.4;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-iquote",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Bolts/Bolts.framework/Headers\"",
+					"-iquote",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers\"",
+					"-iquote",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/JGProgressHUD/JGProgressHUD.framework/Headers\"",
+					"-iquote",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/UriParser-cpp/UriParser.framework/Headers\"",
+					"-iquote",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/VideoCore/videocore.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/glm\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fanner.fannerApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "NewFannerCam/SupportedFiles/NewFannerCam-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4ACB9C5D21D156EA00616C96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACD7CE16D0A654F21ECCB9CA /* Pods-NewFannerCamTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54T682WX35;
+				INFOPLIST_FILE = NewFannerCamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jin.NewFannerCamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewFannerCam.app/NewFannerCam";
+			};
+			name = Debug;
+		};
+		4ACB9C5E21D156EA00616C96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 148188D4784BFCAA6E40EA02 /* Pods-NewFannerCamTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54T682WX35;
+				INFOPLIST_FILE = NewFannerCamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jin.NewFannerCamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewFannerCam.app/NewFannerCam";
+			};
+			name = Release;
+		};
+		4ACB9C6021D156EA00616C96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDF0B7566394496AFD57AD0C /* Pods-NewFannerCamUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54T682WX35;
+				INFOPLIST_FILE = NewFannerCamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jin.NewFannerCamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NewFannerCam;
+			};
+			name = Debug;
+		};
+		4ACB9C6121D156EA00616C96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 504201594D312F7E99129DF6 /* Pods-NewFannerCamUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54T682WX35;
+				INFOPLIST_FILE = NewFannerCamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jin.NewFannerCamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NewFannerCam;
+			};
+			name = Release;
+		};
+		C5D17A492293EE310040C099 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.2;
+				DEVELOPMENT_TEAM = 54T682WX35;
+				INFOPLIST_FILE = "NewFannerCamWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 7.3.4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fanner.fannerApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		C5D17A4A2293EE310040C099 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.2;
+				DEVELOPMENT_TEAM = 54T682WX35;
+				INFOPLIST_FILE = "NewFannerCamWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 7.3.4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fanner.fannerApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		C5D17A4D2293EE310040C099 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.2;
+				DEVELOPMENT_TEAM = 54T682WX35;
+				IBSC_MODULE = NewFannerCamWatch_Extension;
+				INFOPLIST_FILE = NewFannerCamWatch/Info.plist;
+				MARKETING_VERSION = 7.3.4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fanner.fannerApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		C5D17A4E2293EE310040C099 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.2;
+				DEVELOPMENT_TEAM = 54T682WX35;
+				IBSC_MODULE = NewFannerCamWatch_Extension;
+				INFOPLIST_FILE = NewFannerCamWatch/Info.plist;
+				MARKETING_VERSION = 7.3.4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fanner.fannerApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4ACB9C2A21D156E300616C96 /* Build configuration list for PBXProject "NewFannerCam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ACB9C5721D156EA00616C96 /* Debug */,
+				4ACB9C5821D156EA00616C96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4ACB9C5921D156EA00616C96 /* Build configuration list for PBXNativeTarget "NewFannerCam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ACB9C5A21D156EA00616C96 /* Debug */,
+				4ACB9C5B21D156EA00616C96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4ACB9C5C21D156EA00616C96 /* Build configuration list for PBXNativeTarget "NewFannerCamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ACB9C5D21D156EA00616C96 /* Debug */,
+				4ACB9C5E21D156EA00616C96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4ACB9C5F21D156EA00616C96 /* Build configuration list for PBXNativeTarget "NewFannerCamUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ACB9C6021D156EA00616C96 /* Debug */,
+				4ACB9C6121D156EA00616C96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5D17A482293EE310040C099 /* Build configuration list for PBXNativeTarget "NewFannerCamWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5D17A492293EE310040C099 /* Debug */,
+				C5D17A4A2293EE310040C099 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5D17A4C2293EE310040C099 /* Build configuration list for PBXNativeTarget "NewFannerCamWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5D17A4D2293EE310040C099 /* Debug */,
+				C5D17A4E2293EE310040C099 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4ACB9C2721D156E300616C96 /* Project object */;
+}

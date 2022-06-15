@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="w7F-XD-z4r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SettingVC-->
+        <scene sceneID="X9A-pv-pNL">
+            <objects>
+                <viewController id="UCo-v6-247" customClass="SettingVC" customModule="NewFannerCam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="byx-1Z-2Zu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Setting" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="uPB-fm-wd4">
+                                <rect key="frame" x="132.66666666666666" y="384.66666666666669" width="110" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uPB-fm-wd4" firstAttribute="centerX" secondItem="byx-1Z-2Zu" secondAttribute="centerX" id="Aqh-8R-6ob"/>
+                            <constraint firstItem="uPB-fm-wd4" firstAttribute="centerY" secondItem="byx-1Z-2Zu" secondAttribute="centerY" id="GqB-qp-CTv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="h31-vF-rS2"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5lo-Xg-BjA">
+                        <barButtonItem key="leftBarButtonItem" id="o3A-U2-wDe">
+                            <view key="customView" contentMode="scaleToFill" id="vfE-rP-MNb">
+                                <rect key="frame" x="16" y="4" width="166" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="N3E-sa-DGS">
+                                        <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_txt" translatesAutoresizingMaskIntoConstraints="NO" id="hb8-Y7-eWC">
+                                        <rect key="frame" x="52" y="10.666666666666664" width="114" height="15"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="N3E-sa-DGS" firstAttribute="centerY" secondItem="vfE-rP-MNb" secondAttribute="centerY" id="CTE-j0-ffi"/>
+                                    <constraint firstItem="hb8-Y7-eWC" firstAttribute="leading" secondItem="N3E-sa-DGS" secondAttribute="trailing" constant="16" id="HY4-Gz-8vb"/>
+                                    <constraint firstItem="N3E-sa-DGS" firstAttribute="leading" secondItem="vfE-rP-MNb" secondAttribute="leading" id="RTm-QF-b0C"/>
+                                    <constraint firstItem="hb8-Y7-eWC" firstAttribute="centerY" secondItem="vfE-rP-MNb" secondAttribute="centerY" id="xvj-lU-9RB"/>
+                                </constraints>
+                            </view>
+                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="create record btn" image="ic_create_record_match_white" id="ZAP-OG-KHA">
+                                <inset key="imageInsets" minX="0.0" minY="0.0" maxX="1" maxY="0.0"/>
+                                <connections>
+                                    <action selector="onCreateRecordBtn:" destination="UCo-v6-247" id="ITt-y6-fOi"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="create import btn" image="ic_create_import_match_white" id="1qR-Be-BY6">
+                                <inset key="imageInsets" minX="22" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <action selector="onCreateImportBtn:" destination="UCo-v6-247" id="pP8-jY-6dx"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9kf-mI-6Cr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2487" y="1111"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="blh-Cw-sdw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="w7F-XD-z4r" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" springLoaded="YES" id="10y-f2-2Eb"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Jmo-zq-NJz">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UCo-v6-247" kind="relationship" relationship="rootViewController" id="ljQ-3c-3WR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5dy-WC-SDe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1692" y="1111.3300492610838"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_create_import_match_white" width="24" height="24"/>
+        <image name="ic_create_record_match_white" width="24" height="24"/>
+        <image name="logo" width="36.75" height="36.75"/>
+        <image name="logo_txt" width="114.75" height="15"/>
+    </resources>
+</document>

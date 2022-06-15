@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="oRl-cp-cuX">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
+    </dependencies>
+    <scenes>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="110" y="283"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="NewFannerCamWatch" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="360" y="273"/>
+        </scene>
+        <!--Splash Controller-->
+        <scene sceneID="hd0-Ri-Chc">
+            <objects>
+                <controller id="oRl-cp-cuX" customClass="SplashController" customModule="NewFannerCamWatch_Extension">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="NewFannerCam" id="npz-H6-xBI"/>
+                    </items>
+                    <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="labelSplash" destination="npz-H6-xBI" id="gZ2-kg-BPz"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-150" y="-348"/>
+        </scene>
+        <!--RecordingController-->
+        <scene sceneID="OXF-uU-ALA">
+            <objects>
+                <controller identifier="RecordingController" id="hkX-WC-3gB" customClass="RecordingController" customModule="NewFannerCamWatch_Extension">
+                    <items>
+                        <label alignment="center" text="___ - ___" id="vMx-qA-CDd"/>
+                        <button width="48" height="48" alignment="center" verticalAlignment="center" alpha="0.20000000000000001" enabled="NO" backgroundImage="recordIcon" id="qRO-a8-UlO">
+                            <connections>
+                                <action selector="playButtonAction" destination="hkX-WC-3gB" id="gJm-Zr-QMP"/>
+                            </connections>
+                        </button>
+                        <label alignment="center" verticalAlignment="bottom" text="00:00:00" id="hNg-pf-ZT8"/>
+                    </items>
+                    <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="buttonPlayPause" destination="qRO-a8-UlO" id="vJD-5P-afw"/>
+                        <outlet property="labelTiming" destination="hNg-pf-ZT8" id="SRW-14-fKD"/>
+                        <outlet property="labelTitleTop" destination="vMx-qA-CDd" id="hq0-U7-jgK"/>
+                        <segue destination="vIB-Jj-1lx" kind="relationship" relationship="nextPage" id="bCm-Q9-EYI"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="110" y="-343"/>
+        </scene>
+        <!--ConnectController-->
+        <scene sceneID="YYq-KX-lqJ">
+            <objects>
+                <controller identifier="ConnectController" id="fXS-ti-Xg1" customClass="ConnectController" customModule="NewFannerCamWatch_Extension">
+                    <items>
+                        <label alignment="center" text="Fanner Cam" id="c3c-iV-1Sl"/>
+                        <button width="1" alignment="left" verticalAlignment="center" title="Connect" id="MeA-e5-fHR">
+                            <connections>
+                                <action selector="buttonConnectAction" destination="fXS-ti-Xg1" id="OFx-7i-xV5"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="buttonConnect" destination="MeA-e5-fHR" id="1s3-aL-gwe"/>
+                        <outlet property="labelTitle" destination="c3c-iV-1Sl" id="o9b-HK-NYb"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-153" y="-36"/>
+        </scene>
+        <!--GenericMarkerController-->
+        <scene sceneID="AB9-2r-byI">
+            <objects>
+                <controller identifier="GenericMarkerController" id="vIB-Jj-1lx" customClass="GenericMarkerController" customModule="NewFannerCamWatch_Extension">
+                    <items>
+                        <label alignment="center" text="___ - ___" id="O5E-ar-U7E"/>
+                        <button width="48" height="48" alignment="center" verticalAlignment="center" alpha="0.20000000000000001" enabled="NO" backgroundImage="genericMarker" id="Pk5-ET-BnX">
+                            <connections>
+                                <action selector="buttonGenericAction" destination="vIB-Jj-1lx" id="7KY-Bn-qsx"/>
+                            </connections>
+                        </button>
+                        <label alignment="center" verticalAlignment="bottom" text="00:00:00" id="1YP-gQ-4x8"/>
+                    </items>
+                    <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="buttonGeneric" destination="Pk5-ET-BnX" id="ECY-OE-d3J"/>
+                        <outlet property="labelTiming" destination="1YP-gQ-4x8" id="Neg-WI-QY4"/>
+                        <outlet property="labelTop" destination="O5E-ar-U7E" id="nlN-gt-DLj"/>
+                        <segue destination="6LR-YC-MPS" kind="relationship" relationship="nextPage" id="AwF-yY-Es8"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="360" y="-343"/>
+        </scene>
+        <!--CollectiveMarkerController-->
+        <scene sceneID="gi6-4D-knv">
+            <objects>
+                <controller identifier="CollectiveMarkerController" id="6LR-YC-MPS" customClass="CollectiveMarkerController" customModule="NewFannerCamWatch_Extension">
+                    <items>
+                        <label alignment="center" text="___ - ___" id="YQp-K1-B7W"/>
+                        <button width="48" height="48" alignment="center" verticalAlignment="center" alpha="0.20000000000000001" enabled="NO" backgroundImage="collectiveMarker" id="0dH-nq-LG6">
+                            <connections>
+                                <action selector="buttonTagListAction" destination="6LR-YC-MPS" id="9Dk-E6-KZi"/>
+                            </connections>
+                        </button>
+                        <label alignment="center" verticalAlignment="bottom" text="00:00:00" id="UcI-a2-MfS"/>
+                    </items>
+                    <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="buttonTagList" destination="0dH-nq-LG6" id="Sfi-o5-Njf"/>
+                        <outlet property="labelTiming" destination="UcI-a2-MfS" id="Sdn-OW-50U"/>
+                        <outlet property="labelTop" destination="YQp-K1-B7W" id="zKP-fD-GbR"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="610" y="-344"/>
+        </scene>
+        <!--TagController-->
+        <scene sceneID="83R-5K-daL">
+            <objects>
+                <controller identifier="TagController" id="Wfh-qO-Sa4" customClass="TagController" customModule="NewFannerCamWatch_Extension">
+                    <items>
+                        <picker width="136" height="161" alignment="left" verticalAlignment="center" id="bOd-db-MO0">
+                            <connections>
+                                <action selector="tagPickerAction:" destination="Wfh-qO-Sa4" id="ob2-oT-r8f"/>
+                            </connections>
+                        </picker>
+                    </items>
+                    <connections>
+                        <outlet property="tagPicker" destination="bOd-db-MO0" id="7ha-wO-gN6"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="610" y="-31"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="NewFannerCamWatch" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="227" y="-26"/>
+        </scene>
+    </scenes>
+</document>
